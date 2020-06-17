@@ -1,0 +1,29 @@
+/* Section 1 de l'accueil (dernier chapitre publié) */
+
+#last-chapter {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.last-chapter-text {
+    width: 45%;
+}
+
+.last-chapter-datetime {
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    letter-spacing: 0.1rem;
+}
+
+.last-chapter-img {
+    width: 50%;
+}
+
+.last-chapter-extract {
+    max-height: 250px;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+

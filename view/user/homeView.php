@@ -4,20 +4,28 @@
 
 <section id="last-chapter" class="container">
     <!-- Dernier chapitre posté -->
-    <div>
+    <div class="last-chapter-text">
         <h1>
-            Titre très très important !
+            <?php echo ("Titre du dernier chapitre paru");/* INSÉRER LE TITRE DU DERNIER POST */ ?>
         </h1>
 
-        <p><strong>SOUS-TITRE MAJ</strong></p>
+        <p class="last-chapter-datetime">Dernier chapitre paru le <?php echo ("17/06/2020") /* INSÉRER LA DATE DU DERNIER POST */ ?></p>
 
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic pariatur ullam neque aliquam cum. Dolorem corrupti earum delectus molestias ipsa error, perferendis laboriosam neque voluptatem sunt vitae minus iure quia!</p>
+        <p class="last-chapter-extract">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Hic pariatur ullam neque aliquam cum. Dolorem corrupti earum delectus molestias ipsa error, perferendis laboriosam neque voluptatem sunt vitae minus iure quia!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt animi eum repellat sapiente exercitationem a corporis atque accusamus, corrupti illo eos magnam, natus illum tempora voluptatibus, quae necessitatibus enim quis.<br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae beatae porro tenetur sequi sed dolor exercitationem molestias. Amet error ullam fuga magni delectus commodi. Optio iure esse repellat ipsum accusantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab qui sed impedit numquam error possimus perferendis, corporis unde? Eligendi impedit praesentium ipsum obcaecati neque. Magnam sequi consectetur dicta quaerat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore velit impedit quaerat dicta a sit, ab eos quo ipsum dolorem temporibus maxime beatae! Excepturi eligendi iusto repudiandae iure minima debitis.
 
-        <button>Lire le chapitre</button>
+        </p>
+
+        <button>Lire la suite</button>
     </div>
-    <div>
-        <!-- illustration du dernier chapitre -->
-        <img src="public/images/img.jpg" alt="image" />
+
+    <!-- illustration du dernier chapitre -->
+    <div class="last-chapter-img">
+        <img src="public/images/pic1.jpg" alt="image" />
     </div>
 </section>
 
@@ -31,42 +39,42 @@
 
         <h3>Titre chapitre</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-        <button>Lire le chapitre</button>
+        <button>Lire</button>
     </div>
     <div class="old-chapter">
         <img src="public/images/img2.jpg" alt="image" />
 
         <h3>Titre chapitre</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-        <button>Lire le chapitre</button>
+        <button>Lire</button>
     </div>
     <div class="old-chapter">
         <img src="public/images/img2.jpg" alt="image" />
 
         <h3>Titre chapitre</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-        <button>Lire le chapitre</button>
+        <button>Lire</button>
     </div>
     <div class="old-chapter">
         <img src="public/images/img2.jpg" alt="image" />
 
         <h3>Titre chapitre</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-        <button>Lire le chapitre</button>
+        <button>Lire</button>
     </div>
     <div class="old-chapter">
         <img src="public/images/img2.jpg" alt="image" />
 
         <h3>Titre chapitre</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-        <button>Lire le chapitre</button>
+        <button>Lire</button>
     </div>
     <div class="old-chapter">
         <img src="public/images/img2.jpg" alt="image" />
 
         <h3>Titre chapitre</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-        <button>Lire le chapitre</button>
+        <button>Lire</button>
     </div>
 
 

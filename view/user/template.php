@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="public/assets/css/main.css" />
     <link rel="stylesheet" href="public/assets/css/sidebar.css" />
     <link rel="stylesheet" href="public/assets/css/header.css" />
-    <!-- CSS SECTION 1 -->
-    <!-- CSS SECTION 2 -->
+    <link rel="stylesheet" href="public/assets/css/lastchapter.css" /> <!-- CSS SECTION 1 ACCUEIL -->
+    <link rel="stylesheet" href="public/assets/css/chapters.css" /><!-- CSS SECTION 2 ACCUEIL -->
     <!-- CSS CHAPITRE ? -->
     <!-- CSS ADMIN ? -->
     <title><?= $title ?></title> <!-- Titre varie suivant la page affichée -->
@@ -22,6 +22,7 @@
 <body>
     <!-- Menu sidebar -->
     <div id="sidebar">
+        <!-- Bouton ouverture fermeture sidebar -->
         <div class="toggle-btn" onclick="toggleSidebar()">
             <span></span>
             <span></span>
