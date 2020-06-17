@@ -1,0 +1,41 @@
+/* Header */
+
+header,
+header #logo,
+header .social-icons ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+header {
+    height: 155px;
+    border-bottom: 5px solid #f56a6a;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+
+header p, header .social-icons {
+    padding-bottom: 20px;
+}
+
+header p strong, header p em {
+    font-size: 1.1rem;
+}
+
+header a, header #logo img {
+    display: block;
+    border: none;
+}
+
+header #logo a {
+    padding: 0 10px 5px 0;
+}
+
+header .social-icons ul {
+    justify-content: space-between;
+    width: 200px;
+}
+
+header .social-icons i {
+    font-size: 1.5rem;
+}
