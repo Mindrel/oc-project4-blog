@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-between;
     height: 600px;
+    padding-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .last-chapter-text {
@@ -26,4 +28,3 @@
     overflow: hidden;
     margin-bottom: 35px;
 }
-

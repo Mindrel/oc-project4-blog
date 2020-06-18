@@ -1,0 +1,33 @@
+/* Section 2 de l'accueil (liste des 6 avant-derniers chapitres publiés) */
+
+#list-chapters {
+    margin-bottom: 70px;
+}
+
+#list-chapters .chapter-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#list-chapters .old-chapter {
+    width: calc(33.33333% - 3em); /* Etend sur toute la largeur tout en définissant un espace entre chacun */
+    margin-bottom: 90px;
+}
+
+#list-chapters .old-chapter img {
+    height: 60%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+#list-chapters .old-chapter p {
+    margin-bottom: 20px;
+    overflow: hidden;
+    max-height: 90px;
+}
