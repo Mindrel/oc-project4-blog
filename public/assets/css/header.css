@@ -27,6 +27,10 @@ header a, header #logo img {
     border: none;
 }
 
+header #logo img {
+    filter: opacity(70%)
+}
+
 header #logo a {
     padding: 0 10px 5px 0;
 }

@@ -28,13 +28,13 @@
     </div>
 </section>
 
-<section id="list-chapters">
+<section id="previous-chapters-list">
     <h2>
-        Anciens chapitres publiés
+        Précédents chapitres publiés
     </h2>
     <!-- Extraits des chapitres dans l'ordre d'apparition du plus récent au plus ancien -->
     <ul class="chapter-gallery">
-        <li class="old-chapter">
+        <li class="previous-chapter">
             <img src="public/images/pic1280.jpg" alt="image" />
 
             <h3>Titre chapitre test test</h3>
@@ -44,35 +44,35 @@
             </p>
             <button>Lire</button>
         </li>
-        <li class="old-chapter">
+        <li class="previous-chapter">
             <img src="public/images/pic1280.jpg" alt="image" />
 
             <h3>Titre chapitre</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
             <button>Lire</button>
         </li>
-        <li class="old-chapter">
+        <li class="previous-chapter">
             <img src="public/images/pic1280.jpg" alt="image" />
 
             <h3>Titre chapitre</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
             <button>Lire</button>
         </li>
-        <li class="old-chapter">
+        <li class="previous-chapter">
             <img src="public/images/pic1280.jpg" alt="image" />
 
             <h3>Titre chapitre</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
             <button>Lire</button>
         </li>
-        <li class="old-chapter">
+        <li class="previous-chapter">
             <img src="public/images/pic1280.jpg" alt="image" />
 
             <h3>Titre chapitre</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
             <button>Lire</button>
         </li>
-        <li class="old-chapter">
+        <li class="previous-chapter">
             <img src="public/images/pic1280.jpg" alt="image" />
 
             <h3>Titre chapitre</h3>
