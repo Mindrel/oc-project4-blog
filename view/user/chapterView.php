@@ -39,30 +39,51 @@
 <section id="current-chapter-comments">
     <h2>Commentaires</h2>
 
-    <div>
-        <form action="#" method="post">
+    <div class="comments-part">
+        <form action="#" method="post" class="comment-form">
             <div class="comment-user">
-                <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Nom" required />
+                <input type="text" id="name" name="name" placeholder="Nom" minlength="4" maxlength="40" required />
 
-                <label for="email"></label>
                 <input type="email" id="email" name="email" placeholder="Email" required />
             </div>
 
-            <textarea name="message" rows="8" cols="40" placeholder="Tapez votre message"></textarea>
+            <textarea name="message" placeholder="Tapez votre message"></textarea>
 
             <div class="comment-sending">
                 <input type="checkbox" name="human" id="human" required /><label for="human">Je suis un humain</label>
 
                 <input type="submit" value="Envoyer le message" />
-
             </div>
-
-
         </form>
 
         <div class="comments-list">
+            <ul>
+                <li>
+                    <div class="comment-title">
+                        <p class="comment-user-datetime"><strong>coucoudu66</strong> - <em>Le 20/06/2020 à 22h39</em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
+                    </div>
+                    <p class="comment-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi corporis, quisquam deserunt asperiores harum earum sed quae, repudiandae animi labore sequi fuga soluta iure. Voluptate natus aspernatur saepe quaerat.
+                    </p>
+                </li>
 
+                <li>
+                    <div class="comment-title">
+                        <p class="comment-user-datetime"><strong>coucoudu66</strong> - <em>Le 20/06/2020 à 22h39</em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
+                    </div>
+                    <p class="comment-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi corporis, quisquam deserunt asperiores harum earum sed quae, repudiandae animi labore sequi fuga soluta iure. Voluptate natus aspernatur saepe quaerat.
+                    </p>
+                </li>
+
+                <li>
+                    <div class="comment-title">
+                        <p class="comment-user-datetime"><strong>coucoudu66</strong> - <em>Le 20/06/2020 à 22h39</em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
+                    </div>
+                    <p class="comment-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi corporis, quisquam deserunt asperiores harum earum sed quae, repudiandae animi labore sequi fuga soluta iure. Voluptate natus aspernatur saepe quaerat.
+                    </p>
+                </li>
         </div>
     </div>
 

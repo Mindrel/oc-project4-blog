@@ -7,7 +7,8 @@
     font-size: 13pt;
     color: #7f888f;
     line-height: 1.65;
-    outline: none; /* Supprime la bordure sur un élément sélectionné (Ex : boutons) */
+    outline: none;
+    /* Supprime la bordure sur un élément sélectionné (Ex : boutons) */
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 .container {
     max-width: 1690px;
-    margin: auto; 
+    margin: auto;
     padding: 0 6em;
 }
 
@@ -62,6 +63,11 @@ a {
     text-decoration: none;
 }
 
+a i {
+    /* Icônes FA à l'intérieur d'un lien */
+    color: #f56a6a;
+}
+
 strong {
     color: #3d4449;
 }
@@ -75,15 +81,14 @@ img {
     object-position: center;
     border-radius: 7px;
     -webkit-filter: grayscale(40%);
-            filter: grayscale(40%);
+    filter: grayscale(40%);
 }
 
-button, input[type="submit"], input[type="button"] {
+button, 
+input[type="submit"], 
+input[type="button"] {
     border-radius: 0.375em;
     border: 0;
-    box-shadow: inset 0 0 0 2px #f56a6a;
-    color: #f56a6a !important;
-    background-color: transparent;
     transition: background-color 300ms ease-in-out;
     cursor: pointer;
     display: inline-block;
@@ -98,7 +103,25 @@ button, input[type="submit"], input[type="button"] {
     text-transform: uppercase;
 }
 
-button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+button,
+input[type="button"] {
+    box-shadow: inset 0 0 0 2px #f56a6a;
+    color: #f56a6a !important;
+    background-color: transparent;
+}
+
+button:hover, 
+input[type="button"]:hover {
     background-color: rgba(245, 106, 106, 0.08);
     transition: all 250ms ease-in-out;
+}
+
+input[type="submit"] {
+    background-color: #f56a6a;
+    box-shadow: none;
+    color: #ffffff !important;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(246, 120, 120, 0.80);
 }
