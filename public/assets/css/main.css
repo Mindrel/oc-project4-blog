@@ -31,7 +31,7 @@ li {
 h1 {
     font-size: 4rem;
     line-height: 1.2;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -96,7 +96,7 @@ button, input[type="submit"], input[type="button"] {
     text-transform: uppercase;
 }
 
-button:hover {
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
     background-color: rgba(245, 106, 106, 0.08);
     transition: all 250ms ease-in-out;
 }

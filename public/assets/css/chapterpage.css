@@ -1,0 +1,22 @@
+/* Page chapitre */
+
+#current-chapter {
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+.current-chapter-img {
+    height: 550px;
+    margin-bottom: 50px;
+}
+
+.current-chapter-datetime {
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    letter-spacing: 0.1rem;
+}
+
+.current-chapter-text {
+    margin-bottom: 30px;
+}

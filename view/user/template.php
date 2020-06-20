@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="public/assets/css/main.css" />
     <link rel="stylesheet" href="public/assets/css/sidebar.css" />
     <link rel="stylesheet" href="public/assets/css/header.css" />
-    <link rel="stylesheet" href="public/assets/css/lastchapter.css" /> <!-- CSS SECTION 1 ACCUEIL -->
-    <link rel="stylesheet" href="public/assets/css/chapterslist.css" /><!-- CSS SECTION 2 ACCUEIL -->
-    <link rel="stylesheet" href="public/assets/css/about.css" /><!-- CSS SECTION 3 À PROPOS -->
-    <!-- CSS CHAPITRE ? -->
+    <link rel="stylesheet" href="public/assets/css/lastchapter.css" /> <!-- CSS SECTION 1 PAGE ACCUEIL -->
+    <link rel="stylesheet" href="public/assets/css/chapterslist.css" /><!-- CSS SECTION 2 PAGE ACCUEIL -->
+    <link rel="stylesheet" href="public/assets/css/about.css" /><!-- CSS SECTION 3 PAGE ACCUEIL-->
+    <link rel="stylesheet" href="public/assets/css/chapterpage.css" /><!-- PAGE CHAPITRE -->
     <!-- CSS ADMIN ? -->
     <title><?= $title ?></title> <!-- Titre varie suivant la page affichée -->
 </head>
