@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="public/assets/css/header.css" />
     <link rel="stylesheet" href="public/assets/css/lastchapter.css" /> <!-- CSS SECTION 1 ACCUEIL -->
     <link rel="stylesheet" href="public/assets/css/chapterslist.css" /><!-- CSS SECTION 2 ACCUEIL -->
-    <link rel="stylesheet" href="public/assets/css/about.css" />
+    <link rel="stylesheet" href="public/assets/css/about.css" /><!-- CSS SECTION 3 À PROPOS -->
     <!-- CSS CHAPITRE ? -->
     <!-- CSS ADMIN ? -->
     <title><?= $title ?></title> <!-- Titre varie suivant la page affichée -->

@@ -1,11 +1,13 @@
 <?php
 
-require_once("model/PostManager.php");
+require_once("model/ChapterManager.php");
 
-function listPosts()
+function listChapters()
 {
-    $postManager = new PostManager();
-    $posts = $postManager->getPosts();
+    $chapterManager = new ChapterManager();
+    $chapters = $chapterManager->getChapters();
 
-    require("view/user/homeView.php");
+    // require("view/user/homeView.php"); 
+
+    require("view/user/chapterView.php");
 }
