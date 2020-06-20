@@ -74,7 +74,8 @@ img {
     -o-object-position: center;
     object-position: center;
     border-radius: 7px;
-    filter: grayscale(40%);
+    -webkit-filter: grayscale(40%);
+            filter: grayscale(40%);
 }
 
 button, input[type="submit"], input[type="button"] {

@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 99; /* Sinon images passent derrière sidebar sur Chrome à cause du filter */
 }
 
 #sidebar.active {
