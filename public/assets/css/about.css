@@ -1,5 +1,6 @@
 /* Section 3 de l"accueil (à propos de l'auteur) */
 
-#about p {
-    margin-bottom: 80px;
+#about {
+    padding-bottom: 80px;
+    border-bottom: none;
 }

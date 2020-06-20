@@ -40,7 +40,24 @@
     <h2>Commentaires</h2>
 
     <div>
-        <form>
+        <form action="#" method="post">
+            <div class="comment-user">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" placeholder="Nom" required />
+
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required />
+            </div>
+
+            <textarea name="message" rows="8" cols="40" placeholder="Tapez votre message"></textarea>
+
+            <div class="comment-sending">
+                <input type="checkbox" name="human" id="human" required /><label for="human">Je suis un humain</label>
+
+                <input type="submit" value="Envoyer le message" />
+
+            </div>
+
 
         </form>
 
