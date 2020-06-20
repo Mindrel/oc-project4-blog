@@ -63,11 +63,6 @@ a {
     text-decoration: none;
 }
 
-a i {
-    /* Icônes FA à l'intérieur d'un lien */
-    color: #f56a6a;
-}
-
 strong {
     color: #3d4449;
 }

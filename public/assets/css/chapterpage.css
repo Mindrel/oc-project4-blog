@@ -83,7 +83,7 @@
 }
 
 #current-chapter-comments li:hover span {
-    opacity: 100%
+    opacity: 100%;
 }
 
 #current-chapter-comments .comment-title {
@@ -91,3 +91,7 @@
     justify-content: space-between;
     margin-bottom: 5px;
 }
+#current-chapter-comments .comment-title i {
+    color: #f56a6a;
+}
+
