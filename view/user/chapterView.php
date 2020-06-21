@@ -50,7 +50,7 @@
             <textarea name="message" placeholder="Ajouter un commentaire"></textarea>
 
             <div class="comment-sending">
-                <span><input type="checkbox" name="human" id="human" required /><label for="human">Je suis un humain</label></span>
+                <div><input type="checkbox" name="human" id="human" required /><label for="human">Je suis un humain</label></div>
 
                 <input type="submit" value="Envoyer le message" />
             </div>
@@ -60,7 +60,7 @@
             <ul>
                 <li>
                     <div class="comment-title">
-                        <p class="comment-user-datetime"><strong>coucoudu66</strong> - <em>Le 20/06/2020 à 22h39</em></p> <div class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></div>
+                        <p class="comment-user-datetime"><strong>coucoudu66</strong> - <em>Le 20/06/2020 à 22h39</em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
                     </div>
                     <p class="comment-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi corporis, quisquam deserunt asperiores harum earum sed quae, repudiandae animi labore sequi fuga soluta iure. Voluptate natus aspernatur saepe quaerat.

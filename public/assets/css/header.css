@@ -18,8 +18,9 @@ header p, header .social-icons {
     padding-bottom: 20px;
 }
 
-header p strong, header p em {
+header #logo p, header #logo strong {
     font-size: 1.1rem;
+    font-family: "Roboto Slab", serif;
 }
 
 header a, header #logo img {
