@@ -35,9 +35,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="#">Chapitres</a></li>
-                    <li><a href="#">À propos</a></li>
+                    <li><a href="index.php#" onclick="toggleSidebar()">Accueil</a></li>
+                    <li><a href="index.php#previous-chapters-list" onclick="toggleSidebar()">Chapitres</a></li>
+                    <li><a href="index.php#about" onclick="toggleSidebar()">À propos</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,7 +55,7 @@
         <header>
             <div id="logo">
                 <a href="index.php"><img src="public/images/logo.png" alt="Logo blog Jean Forteroche" /></a>
-                <p><strong>Cinq semaines en ballon</strong> par Jean Forteroche</p>
+                <p><strong>Billet simple pour l'Alaska</strong> par Jean Forteroche</p>
             </div>
 
             <div class="social-icons">
