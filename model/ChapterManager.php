@@ -14,14 +14,14 @@ class ChapterManager extends Manager
         return $req;
     }
 
-    // // Extrait les données des 6 avant-derniers chapitres (dont les max 250 premiers char du texte)
-    // public function getChapters()
-    // {
-    //     $db = $this->dbConnect();
-    //     $req = $db->query("SELECT id, title, image_path, LEFT(content, 250) FROM p4_chapters ORDER BY creation_date DESC LIMIT 1,7");
+    // Extrait les données des 6 avant-derniers chapitres (dont les max 250 premiers char du texte)
+    public function getChapters()
+    {
+        $db = $this->dbConnect();
+        $req = $db->query("SELECT id, title, image_path, LEFT(content, 250) AS content_extract FROM p4_chapters ORDER BY creation_date DESC LIMIT 1,7");
 
-    //     return $req;
-    // }
+        return $req;
+    }
 
     // Extrait toutes les données du chapitre sélectionné
     public function getCurrentChapter($chapterId)

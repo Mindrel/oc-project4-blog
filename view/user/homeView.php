@@ -7,6 +7,7 @@
     <?php
     while ($data = $lastChapter->fetch()) {
     ?>
+        <!-- Extrait du dernier chapitre -->
         <div class="last-chapter-text">
             <h1>
                 Chap. <?= $data["id"] ?> - <?= htmlspecialchars($data["title"]); ?>
@@ -15,7 +16,7 @@
             <p class="last-chapter-datetime">Dernier chapitre publié le <?= htmlspecialchars($data["creation_date_fr"]) ?></p>
 
             <p class="last-chapter-extract">
-                <?= htmlspecialchars($data["content_extract"]); ?>
+                <?= nl2br(htmlspecialchars($data["content_extract"])); ?>
             </p>
 
             <button>Lire la suite</button>
@@ -23,7 +24,7 @@
 
         <!-- illustration du dernier chapitre -->
         <div class="last-chapter-img">
-            <img src="public/images/pic1920.jpg" alt="image" />
+            <img src="<?= $data["image_path"] ?>" alt="illustration" />
         </div>
     <?php
     }
@@ -35,53 +36,24 @@
     <h2>
         Précédents chapitres
     </h2>
-    <!-- Extraits des chapitres dans l'ordre d'apparition du plus récent au plus ancien -->
+    <!-- Extraits de chapitres dans l'ordre d'apparition du plus récent au plus ancien -->
     <ul class="chapter-gallery">
-        <li class="previous-chapter">
-            <img src="public/images/pic1280.jpg" alt="image" />
+        <?php
+        while ($data = $chapters->fetch()) {
+        ?>
+            <li class="previous-chapter">
+                <img src="<?= $data["image_path"] ?>" alt="illustration" />
 
-            <h3>Titre chapitre test test</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa suscipit in explicabo animi quos, impedit, aperiam quisquam aut vero necessitatibus corrupti, deserunt at ex recusandae cupiditate similique asperiores architecto? Molestias.
-            </p>
-            <button>Lire</button>
-        </li>
-        <li class="previous-chapter">
-            <img src="public/images/pic1280.jpg" alt="image" />
-
-            <h3>Titre chapitre</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-            <button>Lire</button>
-        </li>
-        <li class="previous-chapter">
-            <img src="public/images/pic1280.jpg" alt="image" />
-
-            <h3>Titre chapitre</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-            <button>Lire</button>
-        </li>
-        <li class="previous-chapter">
-            <img src="public/images/pic1280.jpg" alt="image" />
-
-            <h3>Titre chapitre</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-            <button>Lire</button>
-        </li>
-        <li class="previous-chapter">
-            <img src="public/images/pic1280.jpg" alt="image" />
-
-            <h3>Titre chapitre</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-            <button>Lire</button>
-        </li>
-        <li class="previous-chapter">
-            <img src="public/images/pic1280.jpg" alt="image" />
-
-            <h3>Titre chapitre</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti corporis vitae, nemo sunt maiores dicta libero quidem esse facere minima?...</p>
-            <button>Lire</button>
-        </li>
+                <h3>Chap. <?= $data["id"] ?> - <?= htmlspecialchars($data["title"]); ?></h3>
+                <p>
+                    <?= nl2br(htmlspecialchars($data["content_extract"])); ?>
+                </p>
+                <button>Lire</button>
+            </li>
+        <?php
+        }
+        $chapters->closeCursor();
+        ?>
     </ul>
 </section>
 
