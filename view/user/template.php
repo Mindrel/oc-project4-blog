@@ -55,7 +55,7 @@
         <header>
             <div id="logo">
                 <a href="index.php"><img src="public/images/logo.png" alt="Logo blog Jean Forteroche" /></a>
-                <p><strong>Titre du roman</strong> par Jean Forteroche</p>
+                <p><strong>Cinq semaines en ballon</strong> par Jean Forteroche</p>
             </div>
 
             <div class="social-icons">

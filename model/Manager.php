@@ -1,5 +1,6 @@
 <?php
 
+// Classe qui gère la connexion à la BDD
 class Manager
 {
     protected function dbConnect()
