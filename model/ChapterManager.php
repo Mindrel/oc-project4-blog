@@ -9,19 +9,19 @@ class ChapterManager extends Manager
     public function getLastChapter()
     {
         $db = $this->dbConnect();
-        $req = $db->query("SELECT id, title, image_path, DATE_FORMAT(creation_date, \'%d/%m/%Y\') AS creation_date_fr, LEFT(content, 1000) FROM p4_chapters DESC LIMIT 0,1");
+        $req = $db->query("SELECT id, title, image_path, DATE_FORMAT(creation_date, '%d/%m/%Y') AS creation_date_fr, LEFT(content, 1000) AS content_extract FROM p4_chapters ORDER BY creation_date DESC LIMIT 0, 1");
 
         return $req;
     }
 
-    // Extrait les données des 6 avant-derniers chapitres (dont les max 250 premiers char du texte)
-    public function getChapters()
-    {
-        $db = $this->dbConnect();
-        $req = $db->query("SELECT id, title, image_path, LEFT(content, 250) FROM p4_chapters ORDER BY creation_date DESC LIMIT 1,7");
+    // // Extrait les données des 6 avant-derniers chapitres (dont les max 250 premiers char du texte)
+    // public function getChapters()
+    // {
+    //     $db = $this->dbConnect();
+    //     $req = $db->query("SELECT id, title, image_path, LEFT(content, 250) FROM p4_chapters ORDER BY creation_date DESC LIMIT 1,7");
 
-        return $req;
-    }
+    //     return $req;
+    // }
 
     // Extrait toutes les données du chapitre sélectionné
     public function getCurrentChapter($chapterId)

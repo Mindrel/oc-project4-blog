@@ -2,10 +2,14 @@
 
 require_once("model/ChapterManager.php");
 
-function listChapters()
+// Fonction qui permet l'affichage du contenu de la page d'accueil
+function homeListChapters()
 {
-    $chapterManager = new ChapterManager();
-    $chapters = $chapterManager->getChapters();
+    $lastChapterManager = new ChapterManager();
+    $lastChapter = $lastChapterManager->getLastChapter();
+    
+    // $chaptersManager = new ChapterManager();
+    // $chapters = $chaptersManager->getChapters();
 
     // Ligne correcte remplacée par une autre view pour les tests HTML/CSS
     require("view/user/homeView.php"); 
