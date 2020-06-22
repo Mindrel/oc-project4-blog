@@ -61,8 +61,10 @@
 <section id="about">
     <h2>À propos de l'auteur</h2>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.<br /> Maiores ex magni mollitia doloribus, harum, earum dolor, odit officiis distinctio laudantium animi quasi accusantium nisi dolorum facilis atque sed asperiores. Sapiente.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fuga accusantium inventore veritatis ut quia sunt quibusdam. Fugiat similique quo doloremque maxime sed minima veritatis voluptas, quasi illo ratione! Deleniti.
+        Jean Forteroche, né le 8 février 1948 à Nantes, est un écrivain français, dont une grande partie de l'oeuvre est consacrée à des romans d'aventures et d'anticipation.<br />
+        Après avoir obtenu ses baccalauréats en lettres et en droit, Jean Forteroche poursuit ses études de droit à Paris. Il se consacre alors au théâtre, grâce aux Dumas, père et fils, et occupe le poste de secrétaire du théâtre lyrique jusqu'en 1979 où il fait représenter des pièces écrites en collaboration avec Michel Carré. <br />
+        Pour faire face à de nouvelles responsabilités familiales, il devient agent de change. Jean Forteroche rencontre alors Pierre-Jules Hetzel, un éditeur, et lui propose un manuscrit Voyage en l'air qui deviendra Cinq semaines en ballon, marquant le début d'une longue collaboration.<br />
+        <strong>Note : </strong>Vous retrouverez très bientôt l'intégralité des anciens chapitres en librarie. Pour soutenir l'auteur, n'hésitez pas à vous procurer Billet simple pour l'Alaska dès sa sortie !
     </p>
 </section>
 

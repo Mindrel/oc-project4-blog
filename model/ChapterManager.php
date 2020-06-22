@@ -1,5 +1,7 @@
 <?php
 
+// Modèle chapitres
+
 require_once("model/Manager.php"); // Connexion BDD
 
 class ChapterManager extends Manager

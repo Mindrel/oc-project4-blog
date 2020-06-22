@@ -1,6 +1,9 @@
 <?php
 
+// Contrôleur
+
 require_once("model/ChapterManager.php");
+require_once("model/CommentManager.php");
 
 // Fonction qui permet l'affichage du contenu de la page d'accueil (7 derniers chapitres dont le dernier à part)
 function displayListChapters()
@@ -20,10 +23,8 @@ function displayChapter()
     $chapterManager = new ChapterManager();
     $chapter = $chapterManager->getCurrentChapter($_GET["id"]);
 
-
-    // ICI L'INSTANCE
-    // POUR AFFICHER LES COMMENTAIRES
-    
+    $commentManager = new CommentManager();
+    $comments = $commentManager->getComments($_GET["id"]);
     
     require("view/user/chapterView.php");
 }

@@ -42,41 +42,21 @@
 
         <div class="comments-list">
             <ul>
-                <li>
-                    <div class="comment-title">
-                        <p class="comment-user-datetime"><strong>coucoudu66</strong> - <em>Le 20/06/2020 à 22h39</em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
-                    </div>
-                    <p class="comment-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi corporis, quisquam deserunt asperiores harum earum sed quae, repudiandae animi labore sequi fuga soluta iure. Voluptate natus aspernatur saepe quaerat.
-                    </p>
-                </li>
-
-                <li>
-                    <div class="comment-title">
-                        <p class="comment-user-datetime"><strong>coucoudu66</strong> - <em>Le 20/06/2020 à 22h39</em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
-                    </div>
-                    <p class="comment-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi corporis, quisquam deserunt asperiores harum earum sed quae, repudiandae animi labore sequi fuga soluta iure. Voluptate natus aspernatur saepe quaerat.
-                    </p>
-                </li>
-
-                <li>
-                    <div class="comment-title">
-                        <p class="comment-user-datetime"><strong>coucoudu66</strong> - <em>Le 20/06/2020 à 22h39</em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
-                    </div>
-                    <p class="comment-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi corporis, quisquam deserunt asperiores harum earum sed quae, repudiandae animi labore sequi fuga soluta iure. Voluptate natus aspernatur saepe quaerat.
-                    </p>
-                </li>
-
-                <li>
-                    <div class="comment-title">
-                        <p class="comment-user-datetime"><strong>coucoudu66</strong> - <em>Le 20/06/2020 à 22h39</em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
-                    </div>
-                    <p class="comment-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis commodi corporis, quisquam deserunt asperiores harum earum sed quae, repudiandae animi labore sequi fuga soluta iure. Voluptate natus aspernatur saepe quaerat.
-                    </p>
-                </li>
+                <?php
+                while ($comment = $comments->fetch()) {
+                ?>
+                    <li>
+                        <div class="comment-title">
+                            <p class="comment-user-datetime"><strong><?= htmlspecialchars($comment["author"]) ?></strong> - <em>Le <?= $comment["comment_date_fr"] ?></em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
+                        </div>
+                        <p class="comment-text">
+                            <?= nl2br(htmlspecialchars($comment["comment"])) ?>
+                        </p>
+                    </li>
+                <?php
+                }
+                ?>
+            </ul>
         </div>
     </div>
 
