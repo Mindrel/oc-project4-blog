@@ -19,7 +19,7 @@
                 <?= nl2br(htmlspecialchars($data["content_extract"])); ?>
             </p>
 
-            <button>Lire la suite</button>
+            <a href="index.php?action=chapter&id=<?= $data["id"] ?>" class="button-link">Lire la suite</a>
         </div>
 
         <!-- illustration du dernier chapitre -->
@@ -48,7 +48,7 @@
                 <p>
                     <?= nl2br(htmlspecialchars($data["content_extract"])); ?>
                 </p>
-                <button>Lire</button>
+                <a href="#" class="button-link">Lire</a>
             </li>
         <?php
         }

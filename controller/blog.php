@@ -3,7 +3,7 @@
 require_once("model/ChapterManager.php");
 
 // Fonction qui permet l'affichage du contenu de la page d'accueil (7 derniers chapitres dont le dernier à part)
-function homeListChapters()
+function displayListChapters()
 {
     $lastChapterManager = new ChapterManager();
     $lastChapter = $lastChapterManager->getLastChapter();
@@ -11,8 +11,19 @@ function homeListChapters()
     $chaptersManager = new ChapterManager();
     $chapters = $chaptersManager->getChapters();
 
-    // Ligne correcte remplacée par une autre view pour les tests HTML/CSS
     require("view/user/homeView.php"); 
+}
 
-    // require("view/user/chapterView.php");
+// Affichage détaillé d'un chapitre et de ses commentaires
+function displayChapter()
+{
+    $chapterManager = new ChapterManager();
+    $chapter = $chapterManager->getCurrentChapter($_GET["id"]);
+
+
+    // ICI L'INSTANCE
+    // POUR AFFICHER LES COMMENTAIRES
+    
+    
+    require("view/user/chapterView.php");
 }

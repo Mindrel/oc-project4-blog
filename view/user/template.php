@@ -36,8 +36,8 @@
             <nav>
                 <ul>
                     <li><a href="index.php#" onclick="toggleSidebar()">Accueil</a></li>
-                    <li><a href="index.php#previous-chapters-list" onclick="toggleSidebar()">Chapitres</a></li>
-                    <li><a href="index.php#about" onclick="toggleSidebar()">À propos</a></li>
+                    <li><a href="index.php#previous-chapters-list" onclick="toggleSidebar()">Précédents chapitres</a></li>
+                    <li><a href="index.php#about" onclick="toggleSidebar()">À propos de l'auteur</a></li>
                 </ul>
             </nav>
         </div>

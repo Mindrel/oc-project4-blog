@@ -4,7 +4,6 @@ require_once("model/Manager.php"); // Connexion BDD
 
 class ChapterManager extends Manager
 {
-
     // Fonction qui exécute une requête qui extrait le dernier chapitre seulement (dont les max 1000 premiers char du text)
     public function getLastChapter()
     {
@@ -27,7 +26,7 @@ class ChapterManager extends Manager
     public function getCurrentChapter($chapterId)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare("SELECT id, title, image_path, DATE_FORMAT(creation_date, \'%d/%m/%Y\') AS creation_date_fr FROM p4_chapters WHERE id = ?");
+        $req = $db->prepare("SELECT id, title, image_path, DATE_FORMAT(creation_date, '%d/%m/%Y') AS creation_date_fr FROM p4_chapters WHERE id = ?");
         $req->execute(array($chapterId));
         $chapter = $req->fetch();
 
