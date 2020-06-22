@@ -26,7 +26,7 @@ class ChapterManager extends Manager
     public function getCurrentChapter($chapterId)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare("SELECT id, title, image_path, DATE_FORMAT(creation_date, '%d/%m/%Y') AS creation_date_fr FROM p4_chapters WHERE id = ?");
+        $req = $db->prepare("SELECT id, title, image_path, DATE_FORMAT(creation_date, '%d/%m/%Y') AS creation_date_fr, content FROM p4_chapters WHERE id = ?");
         $req->execute(array($chapterId));
         $chapter = $req->fetch();
 

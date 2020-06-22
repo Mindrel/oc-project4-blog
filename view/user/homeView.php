@@ -13,12 +13,13 @@
                 Chap. <?= $data["id"] ?> - <?= htmlspecialchars($data["title"]); ?>
             </h1>
 
-            <p class="last-chapter-datetime">Dernier chapitre publié le <?= htmlspecialchars($data["creation_date_fr"]) ?></p>
+            <p class="last-chapter-datetime">Dernier chapitre publié le <?= $data["creation_date_fr"] ?></p>
 
             <p class="last-chapter-extract">
                 <?= nl2br(htmlspecialchars($data["content_extract"])); ?>
             </p>
 
+            <!-- Lien d'accès au chapitre -->
             <a href="index.php?action=chapter&id=<?= $data["id"] ?>" class="button-link">Lire la suite</a>
         </div>
 
@@ -48,7 +49,7 @@
                 <p>
                     <?= nl2br(htmlspecialchars($data["content_extract"])); ?>
                 </p>
-                <a href="#" class="button-link">Lire</a>
+                <a href="index.php?action=chapter&id=<?= $data["id"] ?>" class="button-link">Lire</a>
             </li>
         <?php
         }
