@@ -1,3 +1,5 @@
+<!-- Vue de la page d'accueil (user) -->
+
 <?php $title = "Billet simple pour l'Alaska - Jean Forteroche"; ?>
 
 <?php ob_start(); ?>

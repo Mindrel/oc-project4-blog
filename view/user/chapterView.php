@@ -1,3 +1,5 @@
+<!-- Vue détaillée d'un chapitre et de ses commentaires (user) -->
+
 <?php $title = htmlspecialchars($chapter["title"]); ?>
 
 <?php ob_start(); ?>
