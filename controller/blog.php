@@ -39,6 +39,6 @@ function addComment($chapterId, $author, $email, $comment)
     if ($affectedLines === false) {
         throw new Exception("Impossible d'ajouter le commentaire !");
     } else {
-        header("Location: index.php?action=chapter&id=" . $chapterId);
+        header("Location: index.php?action=chapter&id=" . $chapterId . "#current-chapter-comments");
     }
 }
