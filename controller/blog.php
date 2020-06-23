@@ -28,3 +28,17 @@ function displayChapter()
     
     require("view/user/chapterView.php");
 }
+
+// Ajoute un commentaire
+function addComment($chapterId, $author, $email, $comment)
+{
+    $commentManager = new CommentManager();
+
+    $affectedLines = $commentManager->insertComment($chapterId, $author, $email, $comment);
+
+    if ($affectedLines === false) {
+        throw new Exception("Impossible d'ajouter le commentaire !");
+    } else {
+        header("Location: index.php?action=chapter&id=" . $chapterId);
+    }
+}

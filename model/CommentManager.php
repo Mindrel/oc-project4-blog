@@ -15,4 +15,14 @@ class CommentManager extends Manager
 
         return $comments;
     }
+
+    // Insertion d'un commentaire dans la bdd
+    public function insertComment($chapterId, $author, $email, $comment)
+    {
+        $db = $this->dbConnect();
+        $comments = $db->prepare("INSERT INTO p4_comments(chapter_id, author, email, comment_date, comment) VALUES(?, ?, ?, NOW(), ?)");
+        $affectedLines = $comments->execute(array($chapterId, $author, $email, $comment));
+
+        return $affectedLines;
+    }
 }

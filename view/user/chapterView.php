@@ -26,14 +26,14 @@
     <h2>Commentaires</h2>
 
     <div class="comments-part">
-        <form action="#" method="post" class="comment-form">
+        <form action="index.php?action=addComment&id=<?= $chapter["id"] ?>" method="post" class="comment-form">
             <div class="comment-user">
-                <input type="text" id="name" name="name" placeholder="Nom" minlength="4" maxlength="40" required />
+                <input type="text" id="author" name="author" placeholder="Nom" minlength="4" maxlength="40" spellcheck="false" required />
 
-                <input type="email" id="email" name="email" placeholder="Email" required />
+                <input type="email" id="email" name="email" placeholder="Email" minlength="8" maxlength="40" spellcheck="false" required />
             </div>
 
-            <textarea name="message" placeholder="Ajouter un commentaire"></textarea>
+            <textarea id="comment" name="comment" placeholder="Ajouter un commentaire" minlength="1" maxlength="1500"></textarea>
 
             <div class="comment-sending">
                 <div><input type="checkbox" name="human" id="human" required /><label for="human">Je suis un humain</label></div>
@@ -57,6 +57,7 @@
                     </li>
                 <?php
                 }
+                $comments->closeCursor();
                 ?>
             </ul>
         </div>
