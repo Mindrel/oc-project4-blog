@@ -37,5 +37,7 @@ try {
         displayListChapters();
     }
 } catch (Exception $e) { 
-    echo "Erreur : " . $e->getMessage();
+    $_SESSION["error"] = $e->getMessage();
+    require("view/user/errorView.php");
+    // echo "Erreur : " . $e->getMessage();
 }
