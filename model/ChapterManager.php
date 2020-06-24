@@ -12,7 +12,7 @@ class ChapterManager extends Manager
         $db = $this->dbConnect();
         $req = $db->query("SELECT id, title, image_path, DATE_FORMAT(creation_date, '%d/%m/%Y') AS creation_date_fr, LEFT(content, 1000) AS content_extract FROM p4_chapters ORDER BY creation_date DESC LIMIT 0, 1");
 
-        return $req;
+        return $req->fetch();
     }
 
     // Extrait les données des 6 avant-derniers chapitres (dont les max 250 premiers char du texte)

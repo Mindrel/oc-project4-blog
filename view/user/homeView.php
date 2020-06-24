@@ -6,33 +6,26 @@
 
 <section id="last-chapter">
     <!-- Dernier chapitre posté -->
-    <?php
-    while ($data = $lastChapter->fetch()) {
-    ?>
         <!-- Extrait du dernier chapitre -->
         <div class="last-chapter-text">
             <h1>
-                Chap. <?= $data["id"] ?> - <?= htmlspecialchars($data["title"]); ?>
+                Chap. <?= $lastChapter["id"] ?> - <?= htmlspecialchars($lastChapter["title"]); ?>
             </h1>
 
-            <p class="last-chapter-datetime">Dernier chapitre publié le <?= $data["creation_date_fr"] ?></p>
+            <p class="last-chapter-datetime">Dernier chapitre publié le <?= $lastChapter["creation_date_fr"] ?></p>
 
             <p class="last-chapter-extract">
-                <?= nl2br(htmlspecialchars($data["content_extract"])); ?>
+                <?= nl2br(htmlspecialchars($lastChapter["content_extract"])); ?>
             </p>
 
             <!-- Lien d'accès au chapitre -->
-            <a href="index.php?action=chapter&id=<?= $data["id"] ?>" class="button-link">Lire la suite</a>
+            <a href="index.php?action=chapter&id=<?= $lastChapter["id"] ?>" class="button-link">Lire la suite</a>
         </div>
 
         <!-- illustration du dernier chapitre -->
         <div class="last-chapter-img">
-            <img src="<?= $data["image_path"] ?>" alt="illustration" />
+            <img src="<?= $lastChapter["image_path"] ?>" alt="illustration" />
         </div>
-    <?php
-    }
-    $lastChapter->closeCursor();
-    ?>
 </section>
 
 <section id="previous-chapters-list">
