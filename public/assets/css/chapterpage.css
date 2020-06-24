@@ -131,7 +131,8 @@ input[type="checkbox"]:checked::before {
     justify-content: space-between;
     margin-bottom: 5px;
 }
-#current-chapter-comments .comment-title i {
+
+#current-chapter-comments .comment-title .fas {
     color: #f56a6a;
 }
 

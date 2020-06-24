@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="public/assets/css/chapterslist.css" /><!-- CSS SECTION 2 PAGE ACCUEIL -->
     <link rel="stylesheet" href="public/assets/css/about.css" /><!-- CSS SECTION 3 PAGE ACCUEIL-->
     <link rel="stylesheet" href="public/assets/css/chapterpage.css" /><!-- PAGE CHAPITRE -->
+    <link rel="stylesheet" href="public/assets/css/error.css" /><!-- PAGE D'ERREUR -->
     <!-- CSS ADMIN ? -->
     <title><?= $title ?></title> <!-- Titre varie suivant la page affichée -->
 </head>

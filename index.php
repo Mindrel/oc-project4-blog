@@ -36,8 +36,9 @@ try {
         // Dans tous les autres cas on déclenche méthode displayListChapters
         displayListChapters();
     }
+
+// Si on attrape erreur on ouvre la page d'erreur avec son message
 } catch (Exception $e) { 
     $_SESSION["error"] = $e->getMessage();
     require("view/user/errorView.php");
-    // echo "Erreur : " . $e->getMessage();
 }
