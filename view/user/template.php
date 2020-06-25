@@ -44,7 +44,7 @@
         </div>
 
         <div class="sidebar-footer">
-            <p><a href="#">Administration</a></p>
+            <p><a href="admin">Administration</a></p>
             <p>
                 2020 - Michel MARTIN - Le blog de Jean Forteroche<br />
                 Site fictif - DWJ Projet 4 pour OpenClassrooms

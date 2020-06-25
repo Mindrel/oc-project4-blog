@@ -1,6 +1,6 @@
 <?php
 
-// Routeur
+// Routeur principal
 
 require("controller/blog.php");
 
