@@ -1,0 +1,61 @@
+/* Menu sidebar */
+
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #23282C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 99; /* Sinon images passent derrière sidebar sur Chrome à cause du filter */
+}
+
+#sidebar h2 {
+    display: inline-block;
+    margin: 0 0 30px 0;
+    padding: 0 15px 10px 0;
+    border-bottom: 3px solid #f56a6a;
+    color: #E4EBFB;
+}
+
+#sidebar ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #877D7C;
+}
+
+#sidebar ul li:last-child {
+    border: none;
+}
+
+#sidebar nav a {
+    font-family: "Roboto Slab", serif;
+    font-size: 0.9rem;
+    color: #E4EBFB;
+    text-transform: uppercase;
+    border: none;
+    transition: color 200ms ease-in-out;
+}
+
+#sidebar nav a:hover {
+    color: #f56a6a;
+    transition: all 200ms ease-in-out;
+}
+
+.sidebar-menu, .sidebar-footer {
+    margin: 25px;
+}
+
+.sidebar-footer {
+    padding-top: 25px;
+    border-top: 2px solid #877D7C;
+}
+
+.sidebar-footer a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.sidebar-footer .fas {
+    color: #f56a6a;
+}
