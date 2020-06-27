@@ -3,7 +3,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 50px;
+    max-width: 50px; /* Sinon si contenu cellule trop long, width en % ne tient plus compte de la valeur */
 }
 #latest-chapters-table a,
 #latest-comments-table a  {
@@ -15,7 +15,8 @@
     color: #f56a6a;
 }
 
-#latest-chapters-table .chapter-number-col {
+#latest-chapters-table .chapter-number-col,
+#latest-comments-table .comment-nochapter-col {
     width: 4%;
 }
 
@@ -34,14 +35,13 @@
 #latest-chapters-table .chapter-access-col,
 #latest-comments-table .comment-edit-col,
 #latest-comments-table .comment-delete-col,
-#latest-comments-table .comment-nochapter-col,
 #latest-comments-table .comment-counter-col {
     width: 6%;
 }
 
 #latest-comments-table .comment-date-col,
 #latest-comments-table .comment-email-col {
-    width: 12%;
+    width: 14%;
 }
 
 #latest-comments-table .comment-author-col {

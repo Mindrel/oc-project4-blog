@@ -15,6 +15,14 @@ class AdminCommentManager extends Manager
         return $req;
     }
 
+    public function getLatestChapters()
+    {
+        $db = $this->dbConnect();
+        $req = $db->query("SELECT id, DATE_FORMAT(creation_date, '%d/%m/%Y') AS creation_date_fr, title, LEFT(content, 200) AS content_extract FROM p4_chapters ORDER BY creation_date DESC LIMIT 0,5");
+
+        return $req;
+    }
+
     // Insertion d'un commentaire dans la bdd
     // public function insertComment($chapterId, $author, $email, $comment)
     // {

@@ -4,7 +4,7 @@
 
 <h1>Tableau de bord</h1>
 
-<h2>Les cinq derniers chapitres</h2>
+<h2>Les cinq derniers chapitres publiés</h2>
 <table id="latest-chapters-table">
     <thead>
         <tr>
@@ -17,27 +17,34 @@
     </thead>
 
     <tbody>
+        <?php
+        while ($data = $latestChapters->fetch()) {
+        ?>
         <tr>
             <td class="chapter-number-cell">
-
+                <?= $data["id"] ?>
             </td>
             <td class="chapter-date-cell">
-                <!-- php date chap -->01/01/2020
+                <?= $data["creation_date_fr"] ?>
             </td>
             <td class="chapter-title-cell">
-                <!-- php titre chapitre -->Coucou ça va
+                <?= htmlspecialchars($data["title"]) ?>
             </td>
             <td class="chapter-extract-cell">
-                <!-- php extrait chap --> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus recusandae voluptatum molestias magnam quae similique voluptas et doloribus dolorem, laboriosam reprehenderit deserunt quos maxime asperiores. Ea modi a vitae error. klhdajzklh dh jh zeadhze dj hdejzh h dij
+                <?= htmlspecialchars($data["content_extract"]) ?>
             </td>
             <td class="chapter-access-cell">
-                <a href="#"><i class="fas fa-book-open"></i></a>
+                <a href="LIEN VERS MODIF SUPPRESION DU CHAPITRE"><i class="fas fa-book-open"></i></a>
             </td>
         </tr>
+        <?php
+        }
+        $latestChapters->closeCursor();
+        ?>
     </tbody>
 </table>
 
-<h2>Les dix derniers commentaires</h2>
+<h2>Les dix commentaires les plus récents</h2>
 
 <table id="latest-comments-table">
     <thead>
@@ -65,13 +72,13 @@
                     <?= $data["chapter_id"] ?>
                 </td>
                 <td class="comment-author-cell">
-                    <?= $data["author"] ?>
+                    <?= htmlspecialchars($data["author"]) ?>
                 </td>
                 <td class="comment-email-cell">
-                    <?= $data["email"] ?>
+                    <?= htmlspecialchars($data["email"]) ?>
                 </td>
                 <td class="comment-extract-cell">
-                    <?= $data["comment_extract"] ?>
+                    <?= htmlspecialchars($data["comment_extract"]) ?>
                 </td>
                 <td class="comment-counter-cell">
                     <?= $data["reporting_counter"] ?> fois
