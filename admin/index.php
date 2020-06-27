@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../private/assets/css/main.css" />
     <link rel="stylesheet" href="../private/assets/css/sidebar.css" />
+    <link rel="stylesheet" href="../private/assets/css/dashboard.css" />
     <title>Interface d'administration</title>
 </head>
 
@@ -28,7 +29,7 @@
         </div>
 
         <div class="sidebar-footer">
-            <p><a href="../index.php"><i class="fas fa-arrow-left"></i> Retour au site</a></p>
+            <p><a href="../"><i class="fas fa-arrow-left"></i> Retour au site</a></p>
         </div>
     </div>
 
@@ -36,306 +37,78 @@
         <section>
             <h1>Tableau de bord</h1>
 
-            <p>Voici les cinq derniers chapitres publiés et les dix derniers commentaires postés.</p>
-
             <h2>Les cinq derniers chapitres</h2>
-            <table>
+            <table id="last-chapters-table">
                 <thead>
                     <tr>
-                        <th>Numéro</th>
-                        <th>Titre</th>
-                        <th>Date</th>
-                        <th>Extrait</th>
-                        <th>Accéder</th>
+                        <th class="chapter-number-col">N°</th>
+                        <th class="chapter-date-col">Date</th>
+                        <th class="chapter-title-col">Titre</th>
+                        <th class="chapter-extract-col">Extrait</th>
+                        <th class="chapter-access-col">Accéder</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>
-                            <!-- php numéro chapitre -->
+                        <td class="chapter-number-cell">
+                            <!-- php numéro chapitre -->10
                         </td>
-                        <td>
-                            <!-- php titre chapitre -->
+                        <td class="chapter-date-cell">
+                            <!-- php date chap -->01/01/2020
                         </td>
-                        <td>
-                            <!-- php date chap -->
+                        <td class="chapter-title-cell">
+                            <!-- php titre chapitre -->Coucou ça va
                         </td>
-                        <td>
-                            <!-- php extrait chap -->
+                        <td class="chapter-extract-cell">
+                            <!-- php extrait chap --> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus recusandae voluptatum molestias magnam quae similique voluptas et doloribus dolorem, laboriosam reprehenderit deserunt quos maxime asperiores. Ea modi a vitae error. klhdajzklh dh jh zeadhze dj hdejzh h dij
                         </td>
-                        <td><a href="#"><i class="fas fa-book-open"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php numéro chapitre -->
+                        <td class="chapter-access-cell">
+                            <a href="#"><i class="fas fa-book-open"></i></a>
                         </td>
-                        <td>
-                            <!-- php titre chapitre -->
-                        </td>
-                        <td>
-                            <!-- php date chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait chap -->
-                        </td>
-                        <td><a href="#"><i class="fas fa-book-open"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php numéro chapitre -->
-                        </td>
-                        <td>
-                            <!-- php titre chapitre -->
-                        </td>
-                        <td>
-                            <!-- php date chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait chap -->
-                        </td>
-                        <td><a href="#"><i class="fas fa-book-open"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php numéro chapitre -->
-                        </td>
-                        <td>
-                            <!-- php titre chapitre -->
-                        </td>
-                        <td>
-                            <!-- php date chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait chap -->
-                        </td>
-                        <td><a href="#"><i class="fas fa-book-open"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php numéro chapitre -->
-                        </td>
-                        <td>
-                            <!-- php titre chapitre -->
-                        </td>
-                        <td>
-                            <!-- php date chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait chap -->
-                        </td>
-                        <td><a href="#LIEN ACCEDER CHAPITRE"><i class="fas fa-book-open"></i></a></td>
                     </tr>
                 </tbody>
             </table>
 
             <h2>Les dix derniers commentaires</h2>
 
-            <table>
+            <table id="last-comments-table">
                 <thead>
                     <tr>
-                        <th>Date</th>
-                        <th>Auteur</th>
-                        <th>Email</th>
-                        <th>N° chap.</th>
-                        <th>Extrait</th>
-                        <th>Modifier</th>
-                        <th>Supprimer</th>
+                        <th class="comment-date-col">Date/heure</th>
+                        <th class="comment-nochapter-col">N° chap.</th>
+                        <th class="comment-author-col">Auteur</th>
+                        <th class="comment-email-col">Email</th>
+                        <th class="comment-extract-col">Extrait</th>
+                        <th class="comment-edit-col">Modifier</th>
+                        <th class="comment-delete-col">Supprimer</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
-                        <td>
-                            <!-- php date com -->
+                        <td class="comment-date-cell">
+                            <!-- php date com -->01/01/2020 - 21h23
                         </td>
-                        <td>
-                            <!-- php auteur com -->
+                        <td class="comment-nochapter-cell">
+                            <!-- php id chap -->10
                         </td>
-                        <td>
-                            <!-- php email com -->
+                        <td class="comment-author-cell">
+                            <!-- php auteur com -->Jean Loouiis
                         </td>
-                        <td>
-                            <!-- php id chap -->
+                        <td class="comment-email-cell">
+                            <!-- php email com -->test@lolilol.com
                         </td>
-                        <td>
-                            <!-- php extrait com -->
+                        <td class="comment-extract-cell">
+                            <!-- php extrait com --> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora temporibus repudiandae quasi assumenda eius quaerat quibusdam, animi blanditiis quia quidem soluta molestiae minus laborum ad at laudantium, unde voluptatem.
                         </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
+                        <td class="comment-edit-cell">
+                            <a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a>
+                        </td>
+                        <td class="comment-delete-cell">
+                            <a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a>
+                        </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <!-- php date com -->
-                        </td>
-                        <td>
-                            <!-- php auteur com -->
-                        </td>
-                        <td>
-                            <!-- php email com -->
-                        </td>
-                        <td>
-                            <!-- php id chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait com -->
-                        </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php date com -->
-                        </td>
-                        <td>
-                            <!-- php auteur com -->
-                        </td>
-                        <td>
-                            <!-- php email com -->
-                        </td>
-                        <td>
-                            <!-- php id chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait com -->
-                        </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php date com -->
-                        </td>
-                        <td>
-                            <!-- php auteur com -->
-                        </td>
-                        <td>
-                            <!-- php email com -->
-                        </td>
-                        <td>
-                            <!-- php id chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait com -->
-                        </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php date com -->
-                        </td>
-                        <td>
-                            <!-- php auteur com -->
-                        </td>
-                        <td>
-                            <!-- php email com -->
-                        </td>
-                        <td>
-                            <!-- php id chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait com -->
-                        </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php date com -->
-                        </td>
-                        <td>
-                            <!-- php auteur com -->
-                        </td>
-                        <td>
-                            <!-- php email com -->
-                        </td>
-                        <td>
-                            <!-- php id chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait com -->
-                        </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php date com -->
-                        </td>
-                        <td>
-                            <!-- php auteur com -->
-                        </td>
-                        <td>
-                            <!-- php email com -->
-                        </td>
-                        <td>
-                            <!-- php id chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait com -->
-                        </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php date com -->
-                        </td>
-                        <td>
-                            <!-- php auteur com -->
-                        </td>
-                        <td>
-                            <!-- php email com -->
-                        </td>
-                        <td>
-                            <!-- php id chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait com -->
-                        </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php date com -->
-                        </td>
-                        <td>
-                            <!-- php auteur com -->
-                        </td>
-                        <td>
-                            <!-- php email com -->
-                        </td>
-                        <td>
-                            <!-- php id chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait com -->
-                        </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- php date com -->
-                        </td>
-                        <td>
-                            <!-- php auteur com -->
-                        </td>
-                        <td>
-                            <!-- php email com -->
-                        </td>
-                        <td>
-                            <!-- php id chap -->
-                        </td>
-                        <td>
-                            <!-- php extrait com -->
-                        </td>
-                        <td><a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a></td>
-                    </tr>
-
                 </tbody>
             </table>
 

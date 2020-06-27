@@ -1,0 +1,65 @@
+#last-chapters-table td,
+#last-comments-table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 500px;
+}
+#last-chapters-table a,
+#last-comments-table a  {
+    border-bottom: none;
+}
+
+#last-chapters-table .fas,
+#last-comments-table .fas  {
+    color: #f56a6a;
+}
+
+#last-chapters-table .chapter-number-col {
+    width: 4%;
+}
+
+#last-chapters-table .chapter-title-col {
+    width: 17%;
+}
+
+#last-chapters-table .chapter-date-col {
+    width: 10%;
+}
+
+#last-chapters-table .chapter-extract-col {
+    width: 63%;
+}
+
+#last-chapters-table .chapter-access-col,
+#last-comments-table .comment-edit-col,
+#last-comments-table .comment-delete-col,
+#last-comments-table .comment-nochapter-col {
+    width: 6%;
+}
+
+#last-comments-table .comment-date-col,
+#last-comments-table .comment-email-col {
+    width: 12%;
+}
+
+#last-comments-table .comment-author-col {
+    width: 10%;
+}
+
+#last-comments-table .comment-extract-col {
+    width: 48%;
+}
+
+#last-chapters-table .chapter-number-cell,
+#last-chapters-table .chapter-date-cell,
+#last-chapters-table .chapter-access-cell,
+#last-comments-table .comment-date-cell,
+#last-comments-table .comment-author-cell,
+#last-comments-table .comment-email-cell,
+#last-comments-table .comment-nochapter-cell,
+#last-comments-table .comment-edit-cell,
+#last-comments-table .comment-delete-cell {
+    text-align: center;
+}
+

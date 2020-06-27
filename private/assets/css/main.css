@@ -27,7 +27,7 @@ li {
 h1 {
     font-size: 1.7rem;
     display: inline-block;
-    margin: 50px 0;
+    margin: 35px 0;
     padding: 0 15px 10px 0;
     border-bottom: 3px solid #f56a6a
 }
@@ -119,7 +119,8 @@ input[type="submit"]:hover {
 table {
     border-collapse: collapse;
     width: 100%;
-    overflow: hidden;
+    border: solid 2px #CFCFCF;
+    margin-bottom: 35px;
 }
 
 table tbody tr:nth-child(2n + 0), thead {
@@ -130,6 +131,11 @@ table tbody tr:nth-child(2n + 1) {
     background-color: #F9F9F9;
 }
 
-table tbody, table thead {
-    border: solid 1px #CFCFCF;
+thead {
+    border: solid 1px #CFCFCF;}
+
+td, th {
+    border: dotted 1px #CFCFCF;
+    padding: 3px 6px;
+    font-size: 90%;
 }
