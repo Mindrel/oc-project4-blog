@@ -5,7 +5,7 @@
 <h1>Tableau de bord</h1>
 
 <h2>Les cinq derniers chapitres</h2>
-<table id="last-chapters-table">
+<table id="latest-chapters-table">
     <thead>
         <tr>
             <th class="chapter-number-col">N°</th>
@@ -39,7 +39,7 @@
 
 <h2>Les dix derniers commentaires</h2>
 
-<table id="last-comments-table">
+<table id="latest-comments-table">
     <thead>
         <tr>
             <th class="comment-date-col">Date - Heure</th>
@@ -55,7 +55,7 @@
 
     <tbody>
         <?php
-        while ($data = $lastComments->fetch()) {
+        while ($data = $latestComments->fetch()) {
         ?>
             <tr>
                 <td class="comment-date-cell">
@@ -85,7 +85,7 @@
             </tr>
         <?php
         }
-        $lastComments->closeCursor();
+        $latestComments->closeCursor();
         ?>
     </tbody>
 </table>

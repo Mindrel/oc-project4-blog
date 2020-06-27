@@ -7,8 +7,8 @@ require_once("../model/AdminCommentManager.php");
 // Affiche le tableau des commentaires dans le tableau de bord
 function displayLatestComments()
 {
-    $lastCommentsManager = New AdminCommentManager();
-    $lastComments = $lastCommentsManager->getLatestComments();
+    $latestCommentsManager = New AdminCommentManager();
+    $latestComments = $latestCommentsManager->getLatestComments();
 
     require("../view/administrator/dashboardView.php");
 }
