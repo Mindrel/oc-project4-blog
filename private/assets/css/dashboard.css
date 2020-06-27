@@ -3,7 +3,7 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    max-width: 500px;
+    max-width: 50px;
 }
 #last-chapters-table a,
 #last-comments-table a  {
@@ -34,7 +34,8 @@
 #last-chapters-table .chapter-access-col,
 #last-comments-table .comment-edit-col,
 #last-comments-table .comment-delete-col,
-#last-comments-table .comment-nochapter-col {
+#last-comments-table .comment-nochapter-col,
+#last-comments-table .comment-counter-col {
     width: 6%;
 }
 
@@ -48,7 +49,7 @@
 }
 
 #last-comments-table .comment-extract-col {
-    width: 48%;
+    width: 42%;
 }
 
 #last-chapters-table .chapter-number-cell,
@@ -58,8 +59,8 @@
 #last-comments-table .comment-author-cell,
 #last-comments-table .comment-email-cell,
 #last-comments-table .comment-nochapter-cell,
+#last-comments-table .comment-counter-cell,
 #last-comments-table .comment-edit-cell,
 #last-comments-table .comment-delete-cell {
     text-align: center;
 }
-
