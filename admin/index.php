@@ -4,4 +4,4 @@
 
 require("../controller/administration.php");
 
-displayLatestComments();
+displayDashboard();
