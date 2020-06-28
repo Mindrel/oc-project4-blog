@@ -16,7 +16,7 @@ class AdminChapterManager extends Manager
     }
 
     // Réquête qui récupère tous les chapitres
-    public function allChapters()
+    public function getAllChapters()
     {
         $db = $this->dbConnect();
         $req = $db->query("SELECT id, DATE_FORMAT(creation_date, '%d/%m/%Y') AS creation_date_fr, title, LEFT(content, 200) AS content_extract FROM p4_chapters ORDER BY creation_date DESC");

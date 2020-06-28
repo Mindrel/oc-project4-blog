@@ -5,7 +5,7 @@
 require_once("../model/AdminCommentManager.php");
 require_once("../model/AdminChapterManager.php");
 
-// Affiche chapitres et commentaires les plus récennts dans le tableau de bord
+// Affiche chapitres et commentaires les plus récents dans le tableau de bord
 function displayDashboard()
 {
     $latestCommentsManager = New AdminCommentManager();
@@ -15,4 +15,13 @@ function displayDashboard()
     $latestChapters = $latestChaptersManager->getLatestChapters();
 
     require("../view/administrator/dashboardView.php");
+}
+
+// Affiche tous les chapitres existants
+function displayAllChapters()
+{
+    $allChaptersManager = New AdminChapterManager();
+    $allChapters = $allChaptersManager->getAllChapters();
+
+    require("../view/administrator/allChaptersView.php");
 }

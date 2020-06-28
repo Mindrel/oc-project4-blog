@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 
+<!-- admin template -->
+
 <html lang="fr">
 
 <head>
     <meta charset="utf-8" />
     <script src="https://kit.fontawesome.com/bb97965415.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/m2ky4f6j2ladpnyn2hqrhjqozw1lz9riowwb4sptsebbl3ab/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="../private/assets/js/tinymce.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../private/assets/css/main.css" />
     <link rel="stylesheet" href="../private/assets/css/sidebar.css" />
-    <link rel="stylesheet" href="../private/assets/css/dashboard.css" />
+    <link rel="stylesheet" href="../private/assets/css/admincontent.css" />
     <title>Interface d'administration</title>
 </head>
 
@@ -20,9 +24,9 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">Tableau de bord</a></li>
+                    <li><a href="index.php">Tableau de bord</a></li>
                     <li><a href="#">Créer un nouveau chapitre</a></li>
-                    <li><a href="#">Modifier ou supprimer des chapitres</a></li>
+                    <li><a href="index.php?action=allchapters">Modifier ou supprimer des chapitres</a></li>
                     <li><a href="#">Modérer les commentaires</a></li>
                 </ul>
             </nav>

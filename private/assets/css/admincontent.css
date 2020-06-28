@@ -1,0 +1,75 @@
+/* Tout le contenu admin */
+
+#latest-chapters-table td,
+#latest-comments-table td,
+#all-chapters-table td,
+#all-comments-table td {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 50px; /* Sinon si contenu cellule trop long, width en % ne tient plus compte de la valeur */
+}
+
+#latest-chapters-table a,
+#latest-comments-table a,
+#all-chapters-table a,
+#all-comments-table  {
+    border-bottom: none;
+}
+
+#latest-chapters-table .fas,
+#latest-comments-table .fas, 
+#all-chapters-table .fas,
+#all-comments-table .fas  {
+    color: #f56a6a;
+}
+
+.chapter-number-col,
+.comment-nochapter-col {
+    width: 4%;
+}
+
+.chapter-title-col {
+    width: 17%;
+}
+
+.chapter-date-col {
+    width: 10%;
+}
+
+.chapter-extract-col {
+    width: 57%;
+}
+
+.chapter-edit-col,
+.chapter-access-col,
+.comment-edit-col,
+.comment-delete-col,
+.comment-counter-col {
+    width: 6%;
+}
+
+.comment-date-col,
+.comment-email-col {
+    width: 14%;
+}
+
+.comment-author-col {
+    width: 10%;
+}
+
+.comment-extract-col {
+    width: 42%;
+}
+
+.chapter-number-cell,
+.chapter-date-cell,
+.chapter-edit-cell,
+.chapter-access-cell,
+.comment-date-cell,
+.comment-nochapter-cell,
+.comment-counter-cell,
+.comment-edit-cell,
+.comment-delete-cell {
+    text-align: center;
+}

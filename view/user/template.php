@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<!-- user template -->
+
 <html lang="fr">
 
 <head>
