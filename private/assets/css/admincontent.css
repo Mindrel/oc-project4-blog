@@ -1,5 +1,7 @@
 /* Tout le contenu admin */
 
+/* Listes commentaires et chapitres */
+
 #latest-chapters-table td,
 #latest-comments-table td,
 #all-chapters-table td,
@@ -74,4 +76,18 @@
 .comment-edit-cell,
 .comment-delete-cell {
     text-align: center;
+}
+
+/* Modification commentaires et chapitres */
+
+input[type="text"] {
+    width: 20%;
+    padding: 0 10px;
+    border: solid 1px #CFCFCF;
+    border-radius: 7px;
+    box-sizing: border-box; /* Evite l'augmentation du width à cause du padding */
+}
+
+.admin-edit-input {
+    margin-bottom: 15px;
 }

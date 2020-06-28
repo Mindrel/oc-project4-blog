@@ -10,9 +10,13 @@ try {
     if (isset($_GET["action"])) {
 
         // Et si param action == valeur "allchapters" alors on déclenche l'affichage de tous les chapitres
-        if ($_GET["action"] == "allchapters") {
+        if ($_GET["action"] == "allChapters") {
             displayAllChapters();
         }
+
+        elseif ($_GET["action"] == "chapterEdit") {
+            displayChapterEdit();
+        } 
 
     } else {
         // Dans tous les autres cas on affiche le tableau de bord

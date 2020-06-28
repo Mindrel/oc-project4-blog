@@ -1,3 +1,6 @@
 tinymce.init({
-    selector: '#mytextarea' // À MODIFIER PAR L'ID CORRESPONDANT AU TEXTAREA VOULU
+    selector: "#admin-textarea",
+    height: "360",
+    menubar: "",
+    toolbar: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | outdent indent | cut copy paste selectall"
 });

@@ -20,8 +20,29 @@ function displayDashboard()
 // Affiche tous les chapitres existants
 function displayAllChapters()
 {
-    $allChaptersManager = New AdminChapterManager();
-    $allChapters = $allChaptersManager->getAllChapters();
+    $adminChapterManager = New AdminChapterManager();
+    $allChapters = $adminChapterManager->getAllChapters();
 
     require("../view/administrator/allChaptersView.php");
+}
+
+// Accès à l'interface d'édition du chapitre sélectionné
+function displayChapterEdit()
+{
+    $chapterManager = new AdminChapterManager();
+    $chapter = $chapterManager->getCurrentChapter($_GET["id"]);
+
+    require("../view/administrator/chapterEditView.php");
+}
+
+function editChapter($newTitle, $newContent, $chapterId)
+{
+    $adminChapterManager = New AdminChapterManager();
+    $modifiedChapter = $adminChapterManager->editChapterReq($newTitle, $newContent, $chapterId);
+
+    if ($modifiedChapter === false) {
+        throw new Exception("impossible de modifier le chapitre.");
+    } else {
+        header("Location: index.php?action=chapter&id=" . $chapterId);
+    }
 }

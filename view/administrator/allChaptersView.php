@@ -1,4 +1,4 @@
-<!-- Vue tableau de bord admin -->
+<!-- Vue liste des chapitres admin -->
 
 <?php ob_start(); ?>
 
@@ -39,7 +39,7 @@
             <a href="../index.php?action=chapter&id=<?= $data["id"] ?>" target="blank"><i class="fas fa-book-open"></i></a>
             </td>
             <td class="chapter-edit-cell">
-                <a href="LIEN VERS MODIF DU CHAPITRE"><i class="fas fa-edit"></i></a>
+                <a href="index.php?action=chapterEdit&id=<?= $data["id"] ?>"><i class="fas fa-edit"></i></a>
             </td>
             <td class="chapter-delete-cell">
                 <a href="LIEN VERS SUPPR DU CHAPITRE"><i class="fas fa-trash-alt"></i></a>
