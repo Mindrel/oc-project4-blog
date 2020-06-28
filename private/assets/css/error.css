@@ -1,0 +1,22 @@
+/* Page d'erreur */
+
+.error-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+    border: solid 2px #CFCFCF;
+    border-radius: 10px;
+    background-color: white;
+    padding: 25px;
+}
+
+.error-box .fas {
+    color: #f56a6a;
+}
+
+.error-message {
+    margin-bottom: 15px;
+}
+
