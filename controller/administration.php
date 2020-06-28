@@ -43,6 +43,6 @@ function editChapter($newTitle, $newContent, $chapterId)
     if ($modifiedChapter === false) {
         throw new Exception("impossible de modifier le chapitre.");
     } else {
-        header("Location: index.php?action=chapter&id=" . $chapterId);
+        header("Location: ../index.php?action=chapter&id=" . $chapterId);
     }
 }

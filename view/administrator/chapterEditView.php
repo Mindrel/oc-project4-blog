@@ -5,15 +5,15 @@
 <h1>Chapitre <?= $chapter["id"] ?></h1>
 
 <h2>Édition du chapitre</h2>
-<form action="#" method="post">
+<form action="index.php?action=chapterEditValid&id=<?= $chapter["id"] ?>" method="post">
     <div class="admin-edit-input">
         <label for="title">Titre du chapitre</label>
-        <input type="text" name="title" value="<?= htmlspecialchars($chapter["title"]) ?>" />
+        <input type="text" id="title" name="title" value="<?= htmlspecialchars($chapter["title"]) ?>" />
     </div>
 
     <div class="admin-edit-input">
         <label for="chapter-content">Contenu du chapitre</label>
-        <textarea name="chapter-content" id="admin-textarea"><?= nl2br(htmlspecialchars($chapter["content"])) ?></textarea>
+        <textarea name="chapter-content" id="content" class="admin-textarea"><?= nl2br(htmlspecialchars($chapter["content"])) ?></textarea>
     </div>
 
     <div>

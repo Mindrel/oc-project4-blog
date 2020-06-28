@@ -1,11 +1,18 @@
 /* Page d'erreur */
 
+.error-page {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
 .error-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    max-width: 600px;
+    width: 600px;
     border: solid 2px #CFCFCF;
     border-radius: 10px;
     background-color: white;

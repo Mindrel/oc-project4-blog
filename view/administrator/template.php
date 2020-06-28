@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../private/assets/css/main.css" />
     <link rel="stylesheet" href="../private/assets/css/sidebar.css" />
     <link rel="stylesheet" href="../private/assets/css/admincontent.css" />
+    <link rel="stylesheet" href="../private/assets/css/error.css" />
     <title>Interface d'administration</title>
 </head>
 

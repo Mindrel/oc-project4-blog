@@ -4,10 +4,12 @@
 
 <?php ob_start(); ?>
 
+<div class="error-page">
     <div class="error-box">
        <p class="error-message">Erreur : <?= $_SESSION["error"] ?></p>
        <p><a href="index.php"><i class="fas fa-arrow-left"></i> Retour à l'interface d'administration</a></p>
     </div>
+</div>
 
 <?php $content = ob_get_clean(); ?>
 
