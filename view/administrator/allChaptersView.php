@@ -36,7 +36,7 @@
                 <?= htmlspecialchars($data["content_extract"]) ?>
             </td>
             <td class="chapter-access-cell">
-                <a href="LIEN VERS LE CHAPITRE SUR LE SITE" target="blank"><i class="fas fa-book-open"></i></a>
+            <a href="../index.php?action=chapter&id=<?= $data["id"] ?>" target="blank"><i class="fas fa-book-open"></i></a>
             </td>
             <td class="chapter-edit-cell">
                 <a href="LIEN VERS MODIF DU CHAPITRE"><i class="fas fa-edit"></i></a>
