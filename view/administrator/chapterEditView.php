@@ -8,12 +8,12 @@
 <form action="index.php?action=chapterEditValid&id=<?= $chapter["id"] ?>" method="post">
     <div class="admin-edit-input">
         <label for="title">Titre du chapitre</label>
-        <input type="text" id="title" name="title" value="<?= htmlspecialchars($chapter["title"]) ?>" />
+        <input type="text" id="title" name="title" value="<?= $chapter["title"] ?>" />
     </div>
 
     <div class="admin-edit-input">
-        <label for="chapter-content">Contenu du chapitre</label>
-        <textarea name="chapter-content" id="content" class="admin-textarea"><?= nl2br(htmlspecialchars($chapter["content"])) ?></textarea>
+        <label for="content">Contenu du chapitre</label>
+        <textarea name="content" id="content" class="admin-textarea"><?= $chapter["content"] ?></textarea>
     </div>
 
     <div>

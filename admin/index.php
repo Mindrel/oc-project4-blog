@@ -13,11 +13,11 @@ try {
         if ($_GET["action"] == "allChapters") {
             displayAllChapters();
 
-
+        // Sinon si param action == valeur "chapterEdit" alors on déclenche l'affichage de la page d'édition du chapitre
         } elseif ($_GET["action"] == "chapterEdit") {
             displayChapterEdit();
 
-
+        // Sinon si param action == valeur "chapterEditValid" et que toutes les autres conditions sont respectées, on insère le chapitre modifié
         } elseif ($_GET["action"] == "chapterEditValid") {
             if (isset($_GET["id"]) && $_GET["id"] > 0) {
 

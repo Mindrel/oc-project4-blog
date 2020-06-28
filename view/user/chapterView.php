@@ -18,7 +18,7 @@
     </div>
 
     <p class="current-chapter-text">
-        <?= nl2br(htmlspecialchars($chapter["content"])); ?>
+        <?= $chapter["content"]; ?>
     </p>
 </section>
 
