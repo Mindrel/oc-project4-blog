@@ -12,8 +12,9 @@
             <th class="chapter-date-col">Date</th>
             <th class="chapter-title-col">Titre</th>
             <th class="chapter-extract-col">Extrait</th>
-            <th class="chapter-edit-col">Modifier</th>
             <th class="chapter-access-col">Accéder</th>
+            <th class="chapter-edit-col">Modifier</th>
+            <th class="chapter-delete-col">Supprimer</th>
         </tr>
     </thead>
 
@@ -34,11 +35,14 @@
             <td class="chapter-extract-cell">
                 <?= htmlspecialchars($data["content_extract"]) ?>
             </td>
+            <td class="chapter-access-cell">
+                <a href="LIEN VERS LE CHAPITRE SUR LE SITE" target="blank"><i class="fas fa-book-open"></i></a>
+            </td>
             <td class="chapter-edit-cell">
                 <a href="LIEN VERS MODIF DU CHAPITRE"><i class="fas fa-edit"></i></a>
             </td>
-            <td class="chapter-access-cell">
-                <a href="LIEN VERS LE CHAPITRE SUR LE SITE" target="blank"><i class="fas fa-book-open"></i></a>
+            <td class="chapter-delete-cell">
+                <a href="LIEN VERS SUPPR DU CHAPITRE"><i class="fas fa-trash-alt"></i></a>
             </td>
         </tr>
         <?php

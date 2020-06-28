@@ -13,7 +13,7 @@
 #latest-chapters-table a,
 #latest-comments-table a,
 #all-chapters-table a,
-#all-comments-table  {
+#all-comments-table a {
     border-bottom: none;
 }
 
@@ -38,11 +38,12 @@
 }
 
 .chapter-extract-col {
-    width: 57%;
+    width: 51%;
 }
 
-.chapter-edit-col,
 .chapter-access-col,
+.chapter-edit-col,
+.chapter-delete-col,
 .comment-edit-col,
 .comment-delete-col,
 .comment-counter-col {
@@ -64,8 +65,9 @@
 
 .chapter-number-cell,
 .chapter-date-cell,
-.chapter-edit-cell,
 .chapter-access-cell,
+.chapter-edit-cell,
+.chapter-delete-cell,
 .comment-date-cell,
 .comment-nochapter-cell,
 .comment-counter-cell,
