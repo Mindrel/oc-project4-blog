@@ -2,7 +2,7 @@
 
 // Modèle gestion commentaires admin
 
-require_once("../model/Manager.php"); // Connexion BDD
+require_once("../../model/Manager.php"); // Connexion BDD
 
 class AdminCommentManager extends Manager
 {

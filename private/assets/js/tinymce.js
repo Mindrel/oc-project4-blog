@@ -1,5 +1,7 @@
 tinymce.init({
     selector: ".admin-textarea",
+    entity_encoding: "raw",
+    encoding: "UTF-8",
     language: "fr_FR",
     height: "360",
     menubar: "",

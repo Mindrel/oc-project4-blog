@@ -15,7 +15,7 @@
             <p class="last-chapter-datetime">Dernier chapitre publié le <?= $lastChapter["creation_date_fr"] ?></p>
 
             <p class="last-chapter-extract">
-                <?= nl2br(htmlspecialchars($lastChapter["content_extract"])); ?>
+                <?= $lastChapter["content_extract"]; ?>
             </p>
 
             <!-- Lien d'accès au chapitre -->
@@ -42,7 +42,7 @@
 
                 <h3>Chap. <?= $data["id"] ?> - <?= htmlspecialchars($data["title"]); ?></h3>
                 <p>
-                    <?= nl2br(htmlspecialchars($data["content_extract"])); ?>
+                    <?= $data["content_extract"]; ?>
                 </p>
                 <a href="index.php?action=chapter&id=<?= $data["id"] ?>" class="button-link">Lire</a>
             </li>

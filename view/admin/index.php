@@ -2,7 +2,7 @@
 
 // Routeur admin
 
-require("../controller/administration.php");
+require("../../controller/administration.php");
 
 try {
 
@@ -36,5 +36,5 @@ try {
     }
 } catch (Exception $e) {
     $_SESSION["error"] = $e->getMessage();
-    require("../view/administrator/errorView.php");
+    require("errorView.php");
 }

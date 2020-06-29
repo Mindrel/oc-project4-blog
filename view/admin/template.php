@@ -8,12 +8,12 @@
     <meta charset="utf-8" />
     <script src="https://kit.fontawesome.com/bb97965415.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tiny.cloud/1/m2ky4f6j2ladpnyn2hqrhjqozw1lz9riowwb4sptsebbl3ab/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script src="../private/assets/js/tinymce.js"></script>
+    <script src="../../private/assets/js/tinymce.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../private/assets/css/main.css" />
-    <link rel="stylesheet" href="../private/assets/css/sidebar.css" />
-    <link rel="stylesheet" href="../private/assets/css/admincontent.css" />
-    <link rel="stylesheet" href="../private/assets/css/error.css" />
+    <link rel="stylesheet" href="../../private/assets/css/main.css" />
+    <link rel="stylesheet" href="../../private/assets/css/sidebar.css" />
+    <link rel="stylesheet" href="../../private/assets/css/admincontent.css" />
+    <link rel="stylesheet" href="../../private/assets/css/error.css" />
     <title>Interface d'administration</title>
 </head>
 
@@ -34,7 +34,7 @@
         </div>
 
         <div class="sidebar-footer">
-            <p><a href="../"><i class="fas fa-arrow-left"></i> Retour au site</a></p>
+            <p><a href="../../"><i class="fas fa-arrow-left"></i> Retour au site</a></p>
         </div>
     </div>
 
