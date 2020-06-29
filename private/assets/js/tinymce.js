@@ -7,9 +7,9 @@ tinymce.init({
     entity_encoding: "raw",
     encoding: "UTF-8",
 
-    // Paramétrage des boutons et barres du champ de saisie
+    // Paramétrage des boutons et barres de l'éditeur de texte
     menubar: "",
-    toolbar: "undo redo | bold italic underline | alignleft aligncenter alignright alignjustify | outdent indent | cut copy paste selectall",
+    toolbar: "undo redo | styleselect | bold italic underline | alignleft aligncenter alignright alignjustify | outdent indent | cut copy paste selectall",
 
     // Empêcher la création de paragraphes et remplacer par des sauts de lignes
     forced_root_block: '',
