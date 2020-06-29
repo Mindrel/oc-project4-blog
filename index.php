@@ -17,8 +17,8 @@ try {
             } else {
                 throw new Exception("le numéro de chapitre est invalide.");
             }
-        
-        // Sinon si action == valeur "addComment"...
+
+            // Sinon si action == valeur "addComment"...
         } elseif ($_GET["action"] == "addComment") {
             if (isset($_GET["id"]) && $_GET["id"] > 0) {
                 // Et si nom, email, et commentaire non vides alors on déclenche addComment
@@ -30,15 +30,29 @@ try {
             } else {
                 throw new Exception("le numéro de chapitre est invalide.");
             }
+
+            // Sinon si action == "reportComment"
+        } elseif ($_GET["action"] == "reportComment") {
+            if (isset($_GET["id"]) && $_GET["id"] > 0) {
+                // Et si compteur de signalement non vide alors on déclenche incrementRep...
+                if (!empty($_POST["reporting_counter"])) {
+                    incrementReportCounter($_GET["id"], $_POST["reporting_counter"]);
+                } else {
+                    throw new Exception ("il manque la nouvelle valeur du compteur.");
+                }
+            } else {
+                throw new Exception("le numéro de commentaire est invalide.");
+            }
         }
 
+        
     } else {
         // Dans tous les autres cas on déclenche méthode displayListChapters
         displayListChapters();
     }
 
-// Si on attrape erreur on ouvre la page d'erreur avec son message
-} catch (Exception $e) { 
+    // Si on attrape erreur on ouvre la page d'erreur avec son message
+} catch (Exception $e) {
     $_SESSION["error"] = $e->getMessage();
     require("view/user/errorView.php");
 }

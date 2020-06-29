@@ -14,7 +14,7 @@ function displayListChapters()
     $chaptersManager = new ChapterManager();
     $chapters = $chaptersManager->getChapters();
 
-    require("view/user/homeView.php"); 
+    require("view/user/homeView.php");
 }
 
 // Affichage détaillé d'un chapitre et de ses commentaires
@@ -25,7 +25,7 @@ function displayChapter()
 
     $commentManager = new CommentManager();
     $comments = $commentManager->getComments($_GET["id"]);
-    
+
     require("view/user/chapterView.php");
 }
 
@@ -37,8 +37,21 @@ function addComment($chapterId, $author, $email, $comment)
     $affectedLines = $commentManager->insertComment($chapterId, $author, $email, $comment);
 
     if ($affectedLines === false) {
-        throw new Exception("Impossible d'ajouter le commentaire !");
+        throw new Exception("impossible d'ajouter le commentaire.");
     } else {
         header("Location: index.php?action=chapter&id=" . $chapterId . "#current-chapter-comments");
+    }
+}
+
+// Incrémente le compteur de signalement d'un commentaire
+function incrementReportCounter($newCounter, $commentId)
+{
+    $commentManager = new CommentManager();
+    $modifiedCounter = $commentManager->updateReportCounter($newCounter, $commentId);
+    
+    if ($modifiedCounter === false) {
+        throw new Exception("impossible de signaler ce commentaire.");
+    } else {
+        $newCounter++;
     }
 }

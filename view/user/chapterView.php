@@ -49,7 +49,7 @@
                 ?>
                     <li>
                         <div class="comment-title">
-                            <p class="comment-user-datetime"><strong><?= htmlspecialchars($comment["author"]) ?></strong> - <em>Le <?= $comment["comment_date_fr"] ?></em></p> <span class="comment-report"><a href="#">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
+                            <p class="comment-user-datetime"><strong><?= htmlspecialchars($comment["author"]) ?></strong> - <em>Le <?= $comment["comment_date_fr"] ?></em></p> <span class="comment-report"><a href="index.php?action=reportComment?id=<?= $comment["id"] ?>">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
                         </div>
                         <p class="comment-text">
                             <?= nl2br(htmlspecialchars($comment["comment"])) ?>
