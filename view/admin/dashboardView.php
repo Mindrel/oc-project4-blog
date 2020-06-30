@@ -92,10 +92,10 @@
                     <?= $data["reporting_counter"] ?> fois
                 </td>
                 <td class="comment-edit-cell">
-                    <a href="#LIEN MODIFIER COM"><i class="fas fa-edit"></i></a>
+                    <a href="index.php?action=commentEdit&id=<?= $data["id"] ?>"><i class="fas fa-edit"></i></a>
                 </td>
                 <td class="comment-delete-cell">
-                    <a href="#LIEN SUPPRIMER COM"><i class="fas fa-trash-alt"></i></a>
+                    <a href="index.php?action=deleteComment&id=<?= $data["id"] ?>"><i class="fas fa-trash-alt"></i></a>
                 </td>
             </tr>
         <?php

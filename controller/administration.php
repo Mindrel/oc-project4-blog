@@ -26,7 +26,7 @@ function displayAllChapters()
     require("allChaptersView.php");
 }
 
-// Accès à l'interface d'édition du chapitre sélectionné
+// Accès à l'éditeur de texte du chapitre sélectionné
 function displayChapterEdit()
 {
     $chapterManager = new AdminChapterManager();
@@ -35,6 +35,7 @@ function displayChapterEdit()
     require("chapterEditView.php");
 }
 
+// Valide la modification d'un chapitre
 function editChapter($newTitle, $newContent, $chapterId)
 {
     $adminChapterManager = New AdminChapterManager();
@@ -43,6 +44,50 @@ function editChapter($newTitle, $newContent, $chapterId)
     if ($modifiedChapter === false) {
         throw new Exception("impossible de modifier le chapitre.");
     } else {
-        header("Location: ../../index.php?action=allChapters");
+        header("Location: index.php?action=allChapters");
+    }
+}
+
+// Affiche tous les commentaires existants
+function displayAllComments()
+{
+    $adminCommentManager = New AdminCommentManager();
+    $allComments = $adminCommentManager->getAllComments();
+
+    require("allCommentsView.php");
+}
+
+// Accès à l'éditeur de texte du chapitre sélectionné
+function displayCommentEdit()
+{
+    $adminCommentManager = new AdminCommentManager();
+    $comment = $adminCommentManager->getCurrentComment($_GET["id"]);
+
+    require("commentEditView.php");
+}
+
+// Valide la modification d'un commentaire
+function editComment($newComment, $newAuthor, $newEmail, $commentId)
+{
+    $adminCommentManager = New AdminCommentManager();
+    $modifiedComment = $adminCommentManager->editCommentReq($newComment, $newAuthor, $newEmail, $commentId);
+
+    if ($modifiedComment === false) {
+        throw new Exception("impossible de modifier le commentaire.");
+    } else {
+        header("Location: index.php?action=allComments");
+    }
+}
+
+// Valide la suppression d'un commentaire
+function removeComment($commentId)
+{
+    $adminCommentManager = New AdminCommentManager();
+    $delComment = $adminCommentManager->deleteCommentReq($_GET["id"]);
+
+    if ($delComment === false) {
+        throw new Exception("impossible de supprimer le commentaire.");
+    } else {
+        header("Location: index.php?action=allComments");
     }
 }

@@ -1,8 +1,8 @@
 tinymce.init({
     selector: ".admin-textarea",
     language: "fr_FR",
-    height: "360",
-    branding: false,
+    height: "300",
+    branding: false, // Vire le powered
 
     // Force l'encodage 
     entity_encoding: "raw",
