@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 
-<h1>Commentaire du chapitre <?= $comment["chapter_id"] ?> posté le <?= $comment["comment_date_fr"] ?></h1>
+<h1>Commentaire posté le <?= $comment["comment_date_fr"] ?> sous le chapitre <?= $comment["chapter_id"] ?></h1>
 
 <h2>Édition du commentaire</h2>
 <form action="index.php?action=commentEditValid&id=<?= $comment["id"] ?>" method="post">
@@ -30,7 +30,7 @@
 
 <h2>Suppression du commentaire</h2>
 
-<p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer définitivement ce commentaire !</p>
+<p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer <strong>définitivement</strong> ce commentaire !</p>
 <div class="delete-button">
     <a href="index.php?action=deleteComment&id=<?= $comment["id"] ?>"><input type="button" class="admin-delete-button" value="Supprimer le commentaire" /></a>
 </div>

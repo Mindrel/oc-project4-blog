@@ -23,7 +23,7 @@
 
 <h2>Suppression du chapitre</h2>
 
-<p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer complètement ce chapitre !</p>
+<p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer <strong>défintivement</strong> ce chapitre !</p>
 <form action="#">
     <input type="button" class="admin-delete-button" value="Supprimer le chapitre" />
 </form>
