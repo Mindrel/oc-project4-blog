@@ -27,13 +27,16 @@ class CommentManager extends Manager
     }
 
     // Modifie le compteur de signalement d'un com
-    public function updateReportCounter($newCounter, $commentId)
-    {
-        $db = $this->dbConnect();
-        $comments = $db->prepare("UPDATE p4_comments SET reporting_counter = :new_counter WHERE id = :comment_id");
-        $modifiedCounter = $comments->execute(array(
-            "new_counter" => $newCounter,
-            "comment_id" => $commentId
-        ));
-    }
+    // public function updateReportCounter($newCounter, $commentId, $chapterId)
+    // {
+    //     $db = $this->dbConnect();
+    //     $comments = $db->prepare("UPDATE p4_comments SET reporting_counter = :new_counter WHERE id = :comment_id");
+    //     $modifiedCounter = $comments->execute(array(
+    //         "new_counter" => $newCounter,
+    //         "comment_id" => $commentId,
+    //         "chapter_id" => $chapterId
+    //     ));
+
+    //     return $modifiedCounter;
+    // }
 }

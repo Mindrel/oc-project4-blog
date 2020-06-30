@@ -32,17 +32,17 @@ try {
             }
 
             // Sinon si action == "reportComment"
-        } elseif ($_GET["action"] == "reportComment") {
-            if (isset($_GET["id"]) && $_GET["id"] > 0) {
-                // Et si compteur de signalement non vide alors on déclenche incrementRep...
-                if (!empty($_POST["reporting_counter"])) {
-                    incrementReportCounter($_GET["id"], $_POST["reporting_counter"]);
-                } else {
-                    throw new Exception ("il manque la nouvelle valeur du compteur.");
-                }
-            } else {
-                throw new Exception("le numéro de commentaire est invalide.");
-            }
+        // } elseif ($_GET["action"] == "reportComment") {
+        //     if (isset($_GET["id"]) && $_GET["id"] > 0) {
+        //         // Et si compteur de signalement non vide alors on déclenche incrementRep...
+        //         if (!empty($_POST["reporting_counter"])) {
+        //             incrementReportCounter($_GET["id"], $_POST["reporting_counter"], $_POST["chapter_id"]);
+        //         } else {
+        //             throw new Exception ("il manque la nouvelle valeur du compteur.");
+        //         }
+        //     } else {
+        //         throw new Exception("le numéro de commentaire est invalide.");
+        //     }
         }
 
         
