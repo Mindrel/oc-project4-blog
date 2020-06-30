@@ -28,12 +28,12 @@
     </div>
 </form>
 
-<h2>Suppression du chapitre</h2>
+<h2>Suppression du commentaire</h2>
 
-<p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer complètement ce chapitre !</p>
-<form action="index.php?action=deleteComment&id=<?= $comment["id"] ?>">
-    <input type="button" class="admin-delete-button" value="Supprimer le chapitre" />
-</form>
+<p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer définitivement ce commentaire !</p>
+<div class="delete-button">
+    <a href="index.php?action=deleteComment&id=<?= $comment["id"] ?>"><input type="button" class="admin-delete-button" value="Supprimer le commentaire" /></a>
+</div>
 
 <?php $content = ob_get_clean(); ?>
 

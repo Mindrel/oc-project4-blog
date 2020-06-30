@@ -56,7 +56,7 @@ class AdminCommentManager extends Manager
         $db = $this->dbConnect();
         $req = $db->prepare("DELETE FROM p4_comments WHERE id = ?");
         $req->execute(array($commentId));
-        $delComment = $req->fetch();
+        $delComment = $req->rowCount(); // Au lieu de fetch car delete
 
         return $delComment;
     }

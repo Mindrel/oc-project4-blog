@@ -95,3 +95,7 @@ input[type="text"], input[type="email"] {
 .admin-delete-button {
     margin-top: 5px;
 }
+
+.delete-button a {
+    border-bottom: none;
+}
