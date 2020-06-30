@@ -25,7 +25,7 @@
 
 <p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer complètement ce chapitre !</p>
 <form action="#">
-    <input type="button" value="Supprimer le chapitre" />
+    <input type="button" class="admin-delete-button" value="Supprimer le chapitre" />
 </form>
 
 <?php $content = ob_get_clean(); ?>

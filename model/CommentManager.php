@@ -30,7 +30,7 @@ class CommentManager extends Manager
     // public function updateReportCounter($newCounter, $commentId, $chapterId)
     // {
     //     $db = $this->dbConnect();
-    //     $comments = $db->prepare("UPDATE p4_comments SET reporting_counter = :new_counter WHERE id = :comment_id");
+    //     $comments = $db->prepare("UPDATE p4_comments SET reporting_counter = :new_counter WHERE id = :comment_id, chapter_id = :chapter_id");
     //     $modifiedCounter = $comments->execute(array(
     //         "new_counter" => $newCounter,
     //         "comment_id" => $commentId,

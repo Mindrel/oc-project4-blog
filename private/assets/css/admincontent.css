@@ -89,5 +89,9 @@ input[type="text"] {
 }
 
 .admin-edit-input {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.admin-delete-button {
+    margin-top: 5px;
 }

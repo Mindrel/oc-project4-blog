@@ -2,6 +2,7 @@ tinymce.init({
     selector: ".admin-textarea",
     language: "fr_FR",
     height: "360",
+    branding: false,
 
     // Force l'encodage 
     entity_encoding: "raw",
@@ -14,5 +15,7 @@ tinymce.init({
     // Empêcher la création de paragraphes et remplacer par des sauts de lignes
     forced_root_block: '',
     force_br_newlines: true,
-    force_p_newlines: false
+    force_p_newlines: false,
+    plugins: "paste",
+    paste_as_text: true
 });
