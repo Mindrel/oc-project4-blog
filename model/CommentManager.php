@@ -30,11 +30,11 @@ class CommentManager extends Manager
     public function getReportCounter($commentId)
     {
         $db = $this->dbConnect();
-        $req = $db->prepare("SELECT reporting_counter FROM p4_comments WHERE id = ?");
+        $req = $db->prepare("SELECT reporting_counter, chapter_id FROM p4_comments WHERE id = ?");
         $req->execute(array($commentId));
-        $currentReportCounter = $req->fetch();
-
-        return $currentReportCounter;
+        $result= $req->fetch();
+        
+        return $result;
     }
 
     // Modifie le compteur de commentaires

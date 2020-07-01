@@ -23,6 +23,9 @@ function displayChapter()
     $chapterManager = new ChapterManager();
     $chapter = $chapterManager->getCurrentChapter($_GET["id"]);
 
+    if ($chapter === false){
+        throw new Exception("ce chapitre est introuvable.");
+    }
     $commentManager = new CommentManager();
     $comments = $commentManager->getComments($_GET["id"]);
 
@@ -43,17 +46,29 @@ function addComment($chapterId, $author, $email, $comment)
 }
 
 // Incrémente le compteur de signalement d'un commentaire
-function incrementReportCounter($newCounter, $commentId)
+function incrementReportCounter($commentId)
 {
+    // Recherche valeur du compteur actuel dans le commentaire correspondant à l'id
     $reportCommentManager = new CommentManager();
     $comment = $reportCommentManager->getReportCounter($_GET["id"]);
+    
+    if ($comment === false){
+        throw new Exception("commentaire introuvable.");
+    }
 
+    // Extraction des données à partir du résultat  
+    $commentCounter = $comment["reporting_counter"];
+    $chapterId = $comment["chapter_id"];
+    // On incrémente
+    $commentCounter++;
+
+    // Réenregistre la donnée du compteur
     $commentManager = new CommentManager();
-    $modifiedCounter = $commentManager->updateReportCounter($newCounter++, $_GET["id"]);
+    $modifiedCounter = $commentManager->updateReportCounter($commentCounter, $_GET["id"]);
     
     if ($modifiedCounter === false) {
         throw new Exception("impossible de signaler ce commentaire.");
     } else {
-        header("Location: index.php");
+        header("Location: index.php?action=chapter&id=" . $chapterId . "#current-chapter-comments");
     }
 }

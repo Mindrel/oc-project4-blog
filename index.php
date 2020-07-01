@@ -3,7 +3,7 @@
 // Routeur principal
 
 require("controller/blog.php");
-
+    
 try {
     // Si URL contient paramètre "action"...
     if (isset($_GET["action"])) {
@@ -31,15 +31,10 @@ try {
                 throw new Exception("le numéro de chapitre est invalide.");
             }
 
-        // Sinon si action == "reportComment"
-        } elseif ($_GET["action"] == "reportComment") {
+        // Sinon si action == "reportComment" on déclenche incrementReportCounter
+        } elseif ($_GET["action"] == "reportComment") {    
             if (isset($_GET["id"]) && $_GET["id"] > 0) {
-                // Et si compteur de signalement non vide alors on déclenche incrementRep...
-                if (!empty($_POST["reporting_counter"])) {
-                    incrementReportCounter($_POST["reporting_counter"], $_GET["id"]);
-                } else {
-                    throw new Exception ("il manque la nouvelle valeur du compteur.");
-                }
+                    incrementReportCounter($_GET["id"]);
             } else {
                 throw new Exception("le numéro de commentaire est invalide.");
             }
