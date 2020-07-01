@@ -43,14 +43,17 @@ function addComment($chapterId, $author, $email, $comment)
 }
 
 // Incrémente le compteur de signalement d'un commentaire
-// function incrementReportCounter($newCounter, $commentId, $chapterId)
-// {
-//     $commentManager = new CommentManager();
-//     $modifiedCounter = $commentManager->updateReportCounter($newCounter++, $commentId, $chapterId);
+function incrementReportCounter($newCounter, $commentId)
+{
+    $reportCommentManager = new CommentManager();
+    $comment = $reportCommentManager->getReportCounter($_GET["id"]);
+
+    $commentManager = new CommentManager();
+    $modifiedCounter = $commentManager->updateReportCounter($newCounter++, $_GET["id"]);
     
-//     if ($modifiedCounter === false) {
-//         throw new Exception("impossible de signaler ce commentaire.");
-//     } else {
-//         header("Location: index.php?action=chapter&id=" . $chapterId . "#current-chapter-comments");
-//     }
-// }
+    if ($modifiedCounter === false) {
+        throw new Exception("impossible de signaler ce commentaire.");
+    } else {
+        header("Location: index.php");
+    }
+}
