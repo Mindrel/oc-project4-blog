@@ -52,13 +52,14 @@ function incrementReportCounter($commentId)
     $reportCommentManager = new CommentManager();
     $comment = $reportCommentManager->getReportCounter($_GET["id"]);
     
-    if ($comment === false){
+    if ($comment === false) {
         throw new Exception("commentaire introuvable.");
     }
 
     // Extraction des données à partir du résultat  
     $commentCounter = $comment["reporting_counter"];
     $chapterId = $comment["chapter_id"];
+
     // On incrémente
     $commentCounter++;
 
