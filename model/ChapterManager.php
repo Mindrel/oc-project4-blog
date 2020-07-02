@@ -19,7 +19,7 @@ class ChapterManager extends Manager
     public function getChapters()
     {
         $db = $this->dbConnect();
-        $req = $db->query("SELECT id, title, image_path, LEFT(content, 250) AS content_extract FROM p4_chapters ORDER BY creation_date DESC LIMIT 1,7");
+        $req = $db->query("SELECT id, title, image_path, LEFT(content, 250) AS content_extract FROM p4_chapters ORDER BY creation_date DESC LIMIT 1, 6");
 
         return $req;
     }

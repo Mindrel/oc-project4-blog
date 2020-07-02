@@ -51,6 +51,18 @@ try {
                 throw new Exception("le numéro de commentaire est invalide.");
             }
         
+        // Sinon si param action == newChapterEdit on ouvre la vue création de chapitre
+        } elseif ($_GET["action"] == "newChapterEdit") {       
+            require("chapterAddView.php");
+    
+        
+        // Sinon si param action == valeur "addChapter" et que toutes les infos demandées sont saisies on crée le nouveau chapitre
+        } elseif ($_GET["action"] == "addChapter") {
+            if (!empty($_POST["title"]) || !empty($_POST["content"])) {
+                addChapter($_POST["title"], $imagePath, $_POST["content"]);
+            } else {
+                throw new Exception("tous les champs ne sont pas remplis.");
+            }
 
         // Sinon si param action == valeur "deleteComment" et que id présent alors on déclenche la suppression du com    
         } elseif ($_GET["action"] == "deleteComment") {
@@ -60,7 +72,6 @@ try {
                 throw new Exception("le numéro de commentaire est invalide.");
             }
         }
-
 
     } else {
         // Dans tous les autres cas on affiche le tableau de bord

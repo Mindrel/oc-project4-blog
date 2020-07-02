@@ -26,8 +26,8 @@
             <nav>
                 <ul>
                     <li><a href="index.php">Tableau de bord</a></li>
-                    <li><a href="index.php?action=allChapters">Liste des chapitres</a></li>
-                    <li><a href="#">Créer un nouveau chapitre</a></li>
+                    <li><a href="index.php?action=allChapters">Gérer les chapitres</a></li>
+                    <li><a href="index.php?action=newChapterEdit">Créer un nouveau chapitre</a></li>
                     <li><a href="index.php?action=allComments">Modérer les commentaires</a></li>
                 </ul>
             </nav>

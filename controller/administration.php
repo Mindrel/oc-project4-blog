@@ -48,6 +48,24 @@ function editChapter($newTitle, $newContent, $chapterId)
     }
 }
 
+// Ajoute un nouveau chapitre
+function addChapter($title, $imagePath, $content)
+{
+    $adminChapterManager = New AdminChapterManager();
+
+    // Génération du chemin de l'image avec num aléatoire
+    $randomNumber = rand(1, 30);
+    $imagePath = "public/images/" . $randomNumber . ".jpg";
+
+    $affectedLines = $adminChapterManager->insertChapter($title, $imagePath, $content);
+
+    if ($affectedLines === false) {
+        throw new Exception("impossible d'ajouter le chapitre.");
+    } else {
+        header("Location: index.php?action=allChapters");
+    }
+}
+
 // Affiche tous les commentaires existants
 function displayAllComments()
 {

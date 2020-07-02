@@ -48,4 +48,14 @@ class AdminChapterManager extends Manager
 
         return $modifiedChapter;
     }
+
+    // Insère un chapitre dans la bdd
+    public function insertChapter($title, $imagePath, $content)
+    {
+        $db = $this->dbConnect();
+        $chapter = $db->prepare("INSERT INTO p4_chapters(title, image_path, creation_date, content) VALUES(?, ?, NOW(), ?)");
+        $affectedLines = $chapter->execute(array($title, $imagePath, $content));
+
+        return $affectedLines;
+    }
 }

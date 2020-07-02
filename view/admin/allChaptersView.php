@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 
-<h1>Chapitres</h1>
+<h1>Gestion des chapitres</h1>
 
 <h2>Liste des chapitres du plus récent au plus ancien</h2>
 <table id="all-chapters-table">
