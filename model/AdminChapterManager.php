@@ -58,4 +58,15 @@ class AdminChapterManager extends Manager
 
         return $affectedLines;
     }
+
+    // Suppression d'un chapitre dans la bdd
+    public function deleteChapterReq($chapterId)
+    {
+        $db = $this->dbConnect();
+        $req = $db->prepare("DELETE FROM p4_chapters WHERE id = ?");
+        $req->execute(array($chapterId));
+        $delChapter = $req->rowCount(); // Au lieu de fetch car delete
+
+        return $delChapter;
+    }
 }

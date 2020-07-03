@@ -14,7 +14,6 @@
             <th class="chapter-extract-col">Extrait</th>
             <th class="chapter-access-col">Accéder</th>
             <th class="chapter-edit-col">Modifier</th>
-            <th class="chapter-delete-col">Supprimer</th>
         </tr>
     </thead>
 
@@ -41,9 +40,6 @@
             <td class="chapter-edit-cell">
                 <a href="index.php?action=chapterEdit&id=<?= $data["id"] ?>"><i class="fas fa-edit"></i></a>
             </td>
-            <td class="chapter-delete-cell">
-                <a href="LIEN VERS SUPPR DU CHAPITRE"><i class="fas fa-trash-alt"></i></a>
-            </td>
         </tr>
         <?php
         }
@@ -64,7 +60,6 @@
             <th class="comment-extract-col">Extrait</th>
             <th class="comment-counter-col">Signalé</th>
             <th class="comment-edit-col">Modifier</th>
-            <th class="comment-delete-col">Supprimer</th>
         </tr>
     </thead>
 
@@ -93,9 +88,6 @@
                 </td>
                 <td class="comment-edit-cell">
                     <a href="index.php?action=commentEdit&id=<?= $data["id"] ?>"><i class="fas fa-edit"></i></a>
-                </td>
-                <td class="comment-delete-cell">
-                    <a href="index.php?action=deleteComment&id=<?= $data["id"] ?>"><i class="fas fa-trash-alt"></i></a>
                 </td>
             </tr>
         <?php

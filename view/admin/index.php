@@ -54,7 +54,6 @@ try {
         // Sinon si param action == newChapterEdit on ouvre la vue création de chapitre
         } elseif ($_GET["action"] == "newChapterEdit") {       
             require("chapterAddView.php");
-    
         
         // Sinon si param action == valeur "addChapter" et que toutes les infos demandées sont saisies on crée le nouveau chapitre
         } elseif ($_GET["action"] == "addChapter") {
@@ -70,6 +69,14 @@ try {
                 removeComment($_GET["id"]);
             } else {
                 throw new Exception("le numéro de commentaire est invalide.");
+            }
+
+         // Sinon si param action == valeur "deleteChapter" et que id présent alors on déclenche la suppression du chapitre   
+        } elseif ($_GET["action"] == "deleteChapter") {
+            if (isset($_GET["id"]) && $_GET["id"] > 0) {
+                removeChapter($_GET["id"]);
+            } else {
+                throw new Exception("le numéro de chapitre est invalide.");
             }
         }
 

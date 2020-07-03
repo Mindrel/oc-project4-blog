@@ -24,9 +24,9 @@
 <h2>Suppression du chapitre</h2>
 
 <p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer <strong>défintivement</strong> ce chapitre !</p>
-<form action="#">
-    <input type="button" class="admin-delete-button" value="Supprimer le chapitre" />
-</form>
+<div class="delete-button">
+    <a href="index.php?action=deleteChapter&id=<?= $chapter["id"] ?>"><input type="button" class="admin-delete-button" value="Supprimer le chapitre" /></a>
+</div>
 
 <?php $content = ob_get_clean(); ?>
 

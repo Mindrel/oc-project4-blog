@@ -66,6 +66,19 @@ function addChapter($title, $imagePath, $content)
     }
 }
 
+// Valide la suppression d'un chapitre
+function removeChapter($chapterId)
+{
+    $adminChapterManager = New AdminChapterManager();
+    $delChapter = $adminChapterManager->deleteChapterReq($_GET["id"]);
+
+    if ($delChapter === false) {
+        throw new Exception("impossible de supprimer le chapitre.");
+    } else {
+        header("Location: index.php?action=allChapters");
+    }
+}
+
 // Affiche tous les commentaires existants
 function displayAllComments()
 {

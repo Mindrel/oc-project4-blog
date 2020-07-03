@@ -13,7 +13,7 @@
 
     <div class="admin-edit-input">
         <label for="content">Contenu du chapitre</label>
-        <textarea name="content" id="content" class="admin-textarea" placeholder="Écrire le contenu ici..." ></textarea>
+        <textarea name="content" id="content" class="admin-textarea"></textarea>
     </div>
 
     <div>

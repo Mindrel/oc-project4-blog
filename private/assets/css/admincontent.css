@@ -39,9 +39,9 @@
     width: 10%;
 }
 
-.chapter-extract-col {
-    width: 51%;
-}
+/* .chapter-extract-col {
+    width: 51%; pas nécessaire occupera le restant
+} */
 
 .chapter-access-col,
 .chapter-edit-col,
@@ -61,9 +61,9 @@
     width: 10%;
 }
 
-.comment-extract-col {
-    width: 42%;
-}
+/* .comment-extract-col {
+    width: 42%; pas nécessaire occupera le restant
+} */
 
 .chapter-number-cell,
 .chapter-date-cell,

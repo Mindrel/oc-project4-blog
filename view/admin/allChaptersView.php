@@ -42,7 +42,7 @@
                 <a href="index.php?action=chapterEdit&id=<?= $data["id"] ?>"><i class="fas fa-edit"></i></a>
             </td>
             <td class="chapter-delete-cell">
-                <a href="LIEN VERS SUPPR DU CHAPITRE"><i class="fas fa-trash-alt"></i></a>
+                <a href="index.php?action=deleteChapter&id=<?= $data["id"] ?>"><i class="fas fa-trash-alt"></i></a>
             </td>
         </tr>
         <?php
