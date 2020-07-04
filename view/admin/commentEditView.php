@@ -24,7 +24,7 @@
     </div>
 
     <div>
-        <input type="submit" class="button-link" value="Valider les modifications" />
+        <input type="submit" class="button-link" value="Valider les modifications" onclick="return confirm('Souhaitez-vous valider les modifications ? \nLe contenu modifié apparaîtra sur le blog.')"/>
     </div>
 </form>
 
