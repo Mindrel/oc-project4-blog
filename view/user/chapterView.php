@@ -38,7 +38,7 @@
             <div class="comment-sending">
                 <div><input type="checkbox" name="human" id="human" required /><label for="human">Je suis un humain</label></div>
 
-                <input type="submit" value="Envoyer le message" />
+                <input type="submit" value="Envoyer le message" onclick="return confirm('Confirmez-vous l\'envoi du commentaire ?')" />
             </div>
         </form>
 
@@ -49,8 +49,12 @@
                 ?>
                     <li>
                         <div class="comment-title">
-                            <p class="comment-user-datetime"><strong><?= htmlspecialchars($comment["author"]) ?></strong> - <em>Le <?= $comment["comment_date_fr"] ?></em></p> <span class="comment-report"><a href="index.php?action=reportComment&id=<?= $comment["id"] ?>">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
+                            <p class="comment-user-datetime">
+                                <strong><?= htmlspecialchars($comment["author"]) ?></strong> - <em>Le <?= $comment["comment_date_fr"] ?></em>
+                            </p>
+                            <span class="comment-report"><a href="index.php?action=reportComment&id=<?= $comment["id"] ?>" onclick="return confirm('Souhaitez-vous vraiment signaler ce commentaire ?')">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
                         </div>
+
                         <p class="comment-text">
                             <?= nl2br(htmlspecialchars($comment["comment"])) ?>
                         </p>
