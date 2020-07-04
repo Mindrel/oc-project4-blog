@@ -17,15 +17,15 @@
     </div>
 
     <div>
-        <input type="submit" class="button-link" value="Valider les modifications" />
+        <input type="submit" class="button-link" value="Valider les modifications" onclick="return confirm('Souhaitez-vous valider les modifications ? \nLe contenu modifié apparaîtra sur le blog.')"/>
     </div>
 </form>
 
 <h2>Suppression du chapitre</h2>
 
-<p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer <strong>défintivement</strong> ce chapitre !</p>
+<p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer <strong>définitivement</strong> ce chapitre !</p>
 <div class="delete-button">
-    <a href="index.php?action=deleteChapter&id=<?= $chapter["id"] ?>"><input type="button" class="admin-delete-button" value="Supprimer le chapitre" /></a>
+    <a href="index.php?action=deleteChapter&id=<?= $chapter["id"] ?>" onclick="return confirm('Êtes-vous vraiment sûr de vouloir supprimer ce chapitre ? \nATTENTION : si vous acceptez, il sera impossible de revenir en arrière !')"><input type="button" class="admin-delete-button" value="Supprimer le chapitre" /></a>
 </div>
 
 <?php $content = ob_get_clean(); ?>

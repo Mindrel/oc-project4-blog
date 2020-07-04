@@ -42,7 +42,7 @@
                 <a href="index.php?action=chapterEdit&id=<?= $data["id"] ?>"><i class="fas fa-edit"></i></a>
             </td>
             <td class="chapter-delete-cell">
-                <a href="index.php?action=deleteChapter&id=<?= $data["id"] ?>"><i class="fas fa-trash-alt"></i></a>
+                <a href="index.php?action=deleteChapter&id=<?= $data["id"] ?>" onclick="return confirm('Êtes-vous vraiment sûr de vouloir supprimer le chapitre <?= $data['id'] ?> <?= $data['title'] ?> ? \nATTENTION : si vous acceptez, il sera impossible de revenir en arrière !')"><i class="fas fa-trash-alt"></i></a>
             </td>
         </tr>
         <?php

@@ -40,13 +40,13 @@
                     <?= htmlspecialchars($data["comment_extract"]) ?>
                 </td>
                 <td class="comment-counter-cell">
-                    <?= $data["reporting_counter"] ?> fois
+                    <strong><?= $data["reporting_counter"] ?> fois</strong>
                 </td>
                 <td class="comment-edit-cell">
                     <a href="index.php?action=commentEdit&id=<?= $data["id"] ?>"><i class="fas fa-edit"></i></a>
                 </td>
                 <td class="comment-delete-cell">
-                    <a href="index.php?action=deleteComment&id=<?= $data["id"] ?>"><i class="fas fa-trash-alt"></i></a>
+                    <a href="index.php?action=deleteComment&id=<?= $data["id"] ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce commentaire ? \nATTENTION : si vous acceptez, il sera impossible de revenir en arrière !')"><i class="fas fa-trash-alt"></i></a>
                 </td>
             </tr>
         <?php

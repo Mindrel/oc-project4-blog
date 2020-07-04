@@ -17,7 +17,7 @@
     </div>
 
     <div>
-        <input type="submit" class="button-link" value="Envoyer le nouveau chapitre" />
+        <input type="submit" class="button-link" value="Envoyer le nouveau chapitre" onclick="return confirm('Confirmez-vous l\'ajout de ce chapitre ? \nCelui-ci apparaîtra immédiatement sur le blog.')"/>
     </div>
 </form>
 
