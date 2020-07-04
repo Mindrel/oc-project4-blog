@@ -84,7 +84,7 @@
                     <?= htmlspecialchars($data["comment_extract"]) ?>
                 </td>
                 <td class="comment-counter-cell">
-                    <strong><?= $data["reporting_counter"] ?> fois</strong>
+                    <?= $data["reporting_counter"] ?> fois
                 </td>
                 <td class="comment-edit-cell">
                     <a href="index.php?action=commentEdit&id=<?= $data["id"] ?>"><i class="fas fa-edit"></i></a>
