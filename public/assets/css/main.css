@@ -141,3 +141,18 @@ input[type="submit"]:hover {
 ::placeholder {
     color: #9fa3a6
 }
+
+
+/***
+**** RESPONSIVE ****
+***/
+
+@media screen and (max-width: 1439px) { /* HIDPI */
+	* {
+		font-size: 12pt;
+    }	
+}
+
+@media screen and (max-width: 1199px) { /* Tablettes */
+
+}
