@@ -44,3 +44,37 @@ header .social-icons ul {
 header .social-icons i {
     font-size: 1.5rem;
 }
+
+/***
+**** MEDIA QUERIES ****
+***/
+
+@media screen and (max-width: 1439px) { /* HIDPI */
+
+    header {
+        height: 125px;
+        margin-bottom: 70px;
+    }
+
+    header .social-icons ul {
+        width: 170px;
+    }
+
+    header .social-icons i {
+        font-size: 1.4rem;
+    }
+
+    header #logo img {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 1199px) { /* Tablettes */
+    header #logo p, header #logo strong {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) { /* Smartphones */
+
+}

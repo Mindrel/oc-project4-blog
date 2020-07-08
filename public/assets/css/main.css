@@ -144,15 +144,39 @@ input[type="submit"]:hover {
 
 
 /***
-**** RESPONSIVE ****
+**** MEDIA QUERIES ****
 ***/
 
 @media screen and (max-width: 1439px) { /* HIDPI */
 	* {
-		font-size: 12pt;
+        font-size: 12pt;
+        line-height: 1.60;
     }	
+
+    h1 {
+        font-size: 3.8rem;
+        line-height: 1.1;
+        margin-bottom: 25px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: 0 0 45px 0;
+        /* padding: 0 15px 10px 0;
+        border-bottom: 3px solid #f56a6a */
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+        margin-bottom: 18px;
+    }
 }
 
 @media screen and (max-width: 1199px) { /* Tablettes */
+
+}
+
+@media screen and (max-width: 767px) { /* Smartphones */
 
 }

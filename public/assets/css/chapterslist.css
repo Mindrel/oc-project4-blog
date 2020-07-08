@@ -27,3 +27,15 @@
     overflow: hidden;
     max-height: 90px;
 }
+
+@media screen and (max-width: 1439px) { /* HIDPI */
+
+}
+
+@media screen and (max-width: 1199px) { /* Tablettes */
+
+}
+
+@media screen and (max-width: 767px) { /* Smartphones */
+
+}

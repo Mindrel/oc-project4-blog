@@ -83,3 +83,26 @@
     display: inline-block;
     margin-bottom: 20px;
 }
+
+/***
+**** MEDIA QUERIES ****
+***/
+
+@media screen and (max-width: 1439px) { /* HIDPI */
+    #sidebar {
+        width: 380px;
+        left: -380px;
+    }
+
+    #sidebar .toggle-btn {
+        left: 405px;
+    }
+}
+
+@media screen and (max-width: 1199px) { /* Tablettes */
+
+}
+
+@media screen and (max-width: 767px) { /* Smartphones */
+
+}
