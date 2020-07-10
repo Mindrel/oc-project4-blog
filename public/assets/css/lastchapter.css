@@ -42,10 +42,12 @@
     }
 }
 
-@media screen and (max-width: 1199px) { /* Tablettes */
-
-}
-
 @media screen and (max-width: 767px) { /* Smartphones */
+    #last-chapter {
+        flex-direction: column-reverse;
+    }
 
+    .last-chapter-text, .last-chapter-img {
+        width: 100%;
+    }
 }

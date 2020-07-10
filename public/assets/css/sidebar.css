@@ -107,18 +107,16 @@
 
     #sidebar .toggle-btn {
         left: 360px;
-        top: 30px;
     }
 }
 
 @media screen and (max-width: 767px) { /* Smartphones */
     #sidebar {
-        width: 335px;
-        left: -335px;
+        width: 290px;
+        left: -290px;
     }
 
     #sidebar .toggle-btn {
-        left: 345px;
-        top: 20px;
+        left: 300px;
     }
 }

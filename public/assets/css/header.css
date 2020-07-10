@@ -57,7 +57,7 @@ header .social-icons i {
     }
 
     header .social-icons ul {
-        width: 170px;
+        width: 140px;
     }
 
     header .social-icons i {
@@ -81,4 +81,31 @@ header .social-icons i {
 
 @media screen and (max-width: 767px) { /* Smartphones */
 
+    header {
+        flex-direction: column-reverse;
+        align-items: space-between;
+        justify-content: space-around;
+    }
+
+    header #logo p, header #logo strong {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    header .social-icons ul {
+        width: 130px;
+    }
+
+    header #logo img {
+        display: none;
+    }
+
+    header p, header .social-icons {
+        padding-bottom: 0;
+    }    
+
+    header #logo {
+        width: 100%;
+    }
 }
