@@ -154,17 +154,14 @@ input[type="submit"]:hover {
     }	
 
     h1 {
-        font-size: 3.8rem;
+        font-size: 3.4rem;
         line-height: 1.1;
         margin-bottom: 25px;
     }
     
     h2 {
         font-size: 1.5rem;
-        display: inline-block;
         margin: 0 0 45px 0;
-        /* padding: 0 15px 10px 0;
-        border-bottom: 3px solid #f56a6a */
     }
     
     h3 {
@@ -174,7 +171,30 @@ input[type="submit"]:hover {
 }
 
 @media screen and (max-width: 1199px) { /* Tablettes */
+    .container {
+        padding: 0 4em;
+    }
 
+    * {
+        font-size: 11pt;
+        line-height: 1.60;
+    }	
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+        margin: 0 0 40px 0;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 16px;
+    }
 }
 
 @media screen and (max-width: 767px) { /* Smartphones */

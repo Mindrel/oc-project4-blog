@@ -28,12 +28,34 @@
     max-height: 90px;
 }
 
-@media screen and (max-width: 1439px) { /* HIDPI */
+/***
+**** MEDIA QUERIES ****
+***/
 
+@media screen and (max-width: 1439px) { /* HIDPI */
+    #previous-chapters-list {
+        margin-bottom: 50px;
+    }
+
+    #previous-chapters-list .previous-chapter {
+        width: calc(50% - 2em); 
+        margin-bottom: 60px;
+    }
+
+    #previous-chapters-list .previous-chapter p {
+        max-height: 80px;
+    }
 }
 
 @media screen and (max-width: 1199px) { /* Tablettes */
+    #previous-chapters-list .previous-chapter {
+        width: calc(50% - 1.7em); 
+        margin-bottom: 70px;
+    }
 
+    #previous-chapters-list .previous-chapter p {
+        max-height: 70px;
+    }
 }
 
 @media screen and (max-width: 767px) { /* Smartphones */

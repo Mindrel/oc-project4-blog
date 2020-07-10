@@ -100,9 +100,25 @@
 }
 
 @media screen and (max-width: 1199px) { /* Tablettes */
+    #sidebar {
+        width: 350px;
+        left: -350px;
+    }
 
+    #sidebar .toggle-btn {
+        left: 360px;
+        top: 30px;
+    }
 }
 
 @media screen and (max-width: 767px) { /* Smartphones */
+    #sidebar {
+        width: 335px;
+        left: -335px;
+    }
 
+    #sidebar .toggle-btn {
+        left: 345px;
+        top: 20px;
+    }
 }

@@ -69,6 +69,10 @@ header .social-icons i {
     }
 }
 
+/***
+**** MEDIA QUERIES ****
+***/
+
 @media screen and (max-width: 1199px) { /* Tablettes */
     header #logo p, header #logo strong {
         font-size: 1rem;
