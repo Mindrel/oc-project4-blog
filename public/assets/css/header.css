@@ -29,7 +29,8 @@ header a, header #logo img {
 }
 
 header #logo img {
-    filter: opacity(73%);
+    -webkit-filter: opacity(73%);
+            filter: opacity(73%);
 }
 
 header #logo a {
@@ -69,10 +70,6 @@ header .social-icons i {
     }
 }
 
-/***
-**** MEDIA QUERIES ****
-***/
-
 @media screen and (max-width: 1199px) { /* Tablettes */
     header #logo p, header #logo strong {
         font-size: 1rem;
@@ -85,6 +82,7 @@ header .social-icons i {
         flex-direction: column-reverse;
         align-items: space-between;
         justify-content: space-around;
+        margin-bottom: 35px;
     }
 
     header #logo p, header #logo strong {

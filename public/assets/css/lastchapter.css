@@ -44,10 +44,23 @@
 
 @media screen and (max-width: 767px) { /* Smartphones */
     #last-chapter {
+        margin-top: 200px;
         flex-direction: column-reverse;
     }
 
     .last-chapter-text, .last-chapter-img {
         width: 100%;
+    }
+
+    .last-chapter-img {
+        max-height: 230px;
+    }
+
+    .last-chapter-text h1 {
+        margin-top: 20px;
+    }
+
+    .last-chapter-datetime {
+        margin-bottom: 20px;
     }
 }

@@ -59,5 +59,12 @@
 }
 
 @media screen and (max-width: 767px) { /* Smartphones */
+    #previous-chapters-list .previous-chapter {
+        width: 100%; 
+        margin-bottom: 70px;
+    }
 
+    #previous-chapters-list .previous-chapter img {
+        max-height: 230px;
+    }
 }
