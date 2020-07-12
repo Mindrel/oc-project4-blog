@@ -42,6 +42,7 @@
 
 @media screen and (max-width: 767px) { /* Smartphones */
     #last-chapter {
+        height: 550px;
         margin-top: 200px;
         flex-direction: column-reverse;
     }
