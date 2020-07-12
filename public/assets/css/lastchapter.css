@@ -3,7 +3,6 @@
 #last-chapter {
     display: flex;
     justify-content: space-between;
-    height: 600px;
     padding-bottom: 70px;
     margin-bottom: 70px;
 }
@@ -36,7 +35,6 @@
 @media screen and (max-width: 1439px) { /* HIDPI */
 
     #last-chapter {
-        height: 550px;
         padding-bottom: 50px;
         margin-bottom: 50px;
     }
