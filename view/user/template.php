@@ -55,7 +55,7 @@
     </div>
 
     <div class="container">
-        <header class="main-header">
+        <header>
             <div id="logo">
                 <a href="index.php"><img src="public/images/logo.png" alt="Logo blog Jean Forteroche" /></a>
                 <p><strong>Billet simple pour l'Alaska</strong> par Jean Forteroche</p>
