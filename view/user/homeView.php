@@ -4,7 +4,7 @@
 
 <?php ob_start(); ?>
 
-<section id="last-chapter">
+<section id="last-chapter" class="main-section">
     <!-- Dernier chapitre posté -->
         <!-- Extrait du dernier chapitre -->
         <div class="last-chapter-text">
@@ -28,7 +28,7 @@
         </div>
 </section>
 
-<section id="previous-chapters-list">
+<section id="previous-chapters-list" class="main-section">
     <h2>
         Précédents chapitres
     </h2>
@@ -53,7 +53,7 @@
     </ul>
 </section>
 
-<section id="about">
+<section id="about" class="main-section">
     <h2>À propos de l'auteur</h2>
     <p>
         Jean Forteroche, né le 8 février 1948 à Nantes, est un écrivain français, dont une grande partie de l'oeuvre est consacrée à des romans d'aventures et d'anticipation.<br />
