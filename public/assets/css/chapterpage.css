@@ -154,6 +154,9 @@ input[type="checkbox"]:checked::before {
         margin-bottom: 35px;
     }
 
+    #current-chapter-comments li span, #current-chapter-comments li span:hover  {
+        opacity: 75%;
+    }
 }
 
 @media screen and (max-width: 767px) { /* Smartphones */
@@ -181,11 +184,6 @@ input[type="checkbox"]:checked::before {
 
     #current-chapter-comments .comment-form {
         margin-bottom: 15px;
-    }
-
-
-    #current-chapter-comments li span, #current-chapter-comments li span:hover  {
-        opacity: 75%;
     }
 }
 

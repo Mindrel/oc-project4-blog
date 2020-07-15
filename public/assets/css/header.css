@@ -107,3 +107,15 @@ header .social-icons i {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 575px) {  /* Extra small */
+
+    header #logo strong {
+        font-size: 0.95rem;
+    }
+
+    header .book-author {
+        font-size: 0.65rem;
+    }
+}
+
