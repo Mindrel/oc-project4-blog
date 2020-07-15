@@ -9,18 +9,18 @@
     <div>
         <div class="admin-edit-input">
             <label for="author">Auteur</label>
-            <input type="text" id="author" name="author" value="<?= $comment["author"] ?>" />
+            <input type="text" id="author" name="author" value="<?= htmlspecialchars($comment["author"]) ?>" />
         </div>
 
         <div class="admin-edit-input">
             <label for="email">Email de l'auteur</label>
-            <input type="email" id="email" name="email" value="<?= $comment["email"] ?>" />
+            <input type="email" id="email" name="email" value="<?= htmlspecialchars($comment["email"]) ?>" />
         </div>
     </div>
 
     <div class="admin-edit-input">
         <label for="comment">Contenu du commentaire</label>
-        <textarea name="comment" id="comment" class="admin-textarea"><?= $comment["comment"] ?></textarea>
+        <textarea name="comment" id="comment" class="admin-textarea"><?= nl2br(htmlspecialchars($comment["comment"])) ?></textarea>
     </div>
 
     <div>
