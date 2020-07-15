@@ -15,11 +15,11 @@ class ChapterManager extends Manager
         return $req->fetch();
     }
 
-    // Extrait les données des 6 avant-derniers chapitres (dont les max 250 premiers char du texte)
+    // Extrait les données de tous les chapitres sans tenir compte du dernier (max 250 premiers char du texte)
     public function getChapters()
     {
         $db = $this->dbConnect();
-        $req = $db->query("SELECT id, title, image_path, LEFT(content, 250) AS content_extract FROM p4_chapters ORDER BY creation_date DESC LIMIT 1, 6");
+        $req = $db->query("SELECT id, title, image_path, LEFT(content, 250) AS content_extract FROM p4_chapters WHERE id NOT IN(SELECT MAX(id) FROM p4_chapters) ORDER BY creation_date DESC");
 
         return $req;
     }
