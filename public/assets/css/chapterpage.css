@@ -136,6 +136,10 @@ input[type="checkbox"]:checked::before {
     color: #f56a6a;
 }
 
+#current-chapter-comments .comment-user-datetime {
+    text-align: left;
+}
+
 /***
 **** MEDIA QUERIES ****
 ***/
