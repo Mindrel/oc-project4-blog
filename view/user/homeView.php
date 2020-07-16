@@ -12,7 +12,7 @@
                 Chap. <?= $lastChapter["id"] ?> - <?= htmlspecialchars($lastChapter["title"]); ?>
             </h1>
 
-            <p class="last-chapter-datetime">Dernier chapitre publié le <?= $lastChapter["creation_date_fr"] ?></p>
+            <p class="last-chapter-datetime">Dernier chapitre publié le <time datetime="<?= $lastChapter["time_tag"] ?>" class="last-chapter-datetime"><?= $lastChapter["creation_date_fr"] ?></time></p>
 
             <p class="last-chapter-extract">
                 <?= $lastChapter["content_extract"]; ?>

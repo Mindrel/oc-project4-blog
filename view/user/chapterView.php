@@ -10,7 +10,7 @@
         <?= htmlspecialchars($chapter["title"]) ?>
     </h1>
 
-    <p class="current-chapter-datetime">Chapitre publié le <?= $chapter["creation_date_fr"] ?></p>
+    <p class="current-chapter-datetime">Chapitre publié le <time datetime="<?= $chapter["time_tag"] ?>" class="current-chapter-datetime"><?= $chapter["creation_date_fr"] ?></time></p>
 
     <!-- illustration du dernier chapitre -->
     <div class="current-chapter-img">
@@ -50,7 +50,7 @@
                     <li>
                         <div class="comment-title">
                             <p class="comment-user-datetime">
-                                <strong><?= htmlspecialchars($comment["author"]) ?></strong> - <em>Le <?= $comment["comment_date_fr"] ?></em>
+                                <strong><?= htmlspecialchars($comment["author"]) ?></strong> - <em>Le <time datetime="<?= $comment["time_tag"] ?>"><?= $comment["comment_date_fr"] ?></time></em>
                             </p>
                             <span class="comment-report"><a href="index.php?action=reportComment&id=<?= $comment["id"] ?>" onclick="return confirm('Souhaitez-vous vraiment signaler ce commentaire ?')">Signaler <i class="fas fa-exclamation-triangle"></i></a></span>
                         </div>
