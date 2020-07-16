@@ -45,6 +45,9 @@ h2 {
 h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 h1, h2, h3 {
