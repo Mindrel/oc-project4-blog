@@ -25,7 +25,7 @@
 
 <p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer <strong>définitivement</strong> ce chapitre !</p>
 <div class="delete-button">
-    <a href="index.php?action=deleteChapter&id=<?= $chapter["id"] ?>" onclick="return confirm('Êtes-vous vraiment sûr de vouloir supprimer ce chapitre ? \nATTENTION : si vous acceptez, il sera impossible de revenir en arrière !')"><input type="button" class="admin-delete-button" value="Supprimer le chapitre" /></a>
+    <a href="index.php?action=deleteChapter&id=<?= $chapter["id"] ?>" class="admin-delete-button" onclick="return confirm('Êtes-vous vraiment sûr de vouloir supprimer ce chapitre ? \nATTENTION : si vous acceptez, il sera impossible de revenir en arrière ! \nDe plus, les commentaires liés à ce chapitres seront également définitivement supprimés.')">Supprimer le chapitre</a>
 </div>
 
 <?php $content = ob_get_clean(); ?>

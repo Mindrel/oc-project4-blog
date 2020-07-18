@@ -55,7 +55,8 @@ a {
 button,
 .button-link,
 input[type="submit"], 
-input[type="button"] {
+input[type="button"],
+.delete-button a {
     border-radius: 0.375em;
     border: 0;
     transition: background-color 300ms ease-in-out;
@@ -86,12 +87,14 @@ input[type="submit"]:hover {
     background-color: rgba(245, 106, 106, 0.08);
 }
 
+.delete-button a,
 input[type="button"] {
     background-color: #f56a6a;
     box-shadow: none;
     color: #ffffff;
 }
 
+.delete-button a:hover,
 input[type="button"]:hover {
     background-color: rgb(246, 120, 120, 0.80);
 }

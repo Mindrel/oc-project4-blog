@@ -32,7 +32,7 @@
 
 <p>Avant de cliquer sur ce bouton, soyez sur de vouloir supprimer <strong>définitivement</strong> ce commentaire !</p>
 <div class="delete-button">
-    <a href="index.php?action=deleteComment&id=<?= $comment["id"] ?>" onclick="return confirm('Êtes-vous sûr de vouloir supprimer défintivement ce commentaire ? \nATTENTION : si vous acceptez, il sera impossible de revenir en arrière !')"><input type="button" class="admin-delete-button" value="Supprimer le commentaire" /></a>
+    <a href="index.php?action=deleteComment&id=<?= $comment["id"] ?>" class="admin-delete-button" onclick="return confirm('Êtes-vous sûr de vouloir supprimer défintivement ce commentaire ? \nATTENTION : si vous acceptez, il sera impossible de revenir en arrière !')">Supprimer le commentaire</a>
 </div>
 
 <?php $content = ob_get_clean(); ?>
