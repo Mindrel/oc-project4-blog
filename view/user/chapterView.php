@@ -4,11 +4,11 @@
 
 <?php ob_start(); ?>
 
-<section id="current-chapter">
+<section id="current-chapter" class="main-section">
     <!-- Dernier chapitre posté -->
-    <h1>
-        <?= htmlspecialchars($chapter["title"]) ?>
-    </h1>
+    <h2>
+        Chap. <?= $chapter["id"] ?> - <?= htmlspecialchars($chapter["title"]) ?>
+    </h2>
 
     <p class="current-chapter-datetime">Chapitre publié le <time datetime="<?= $chapter["time_tag"] ?>" class="current-chapter-datetime"><?= $chapter["creation_date_fr"] ?></time></p>
 
@@ -22,7 +22,7 @@
     </p>
 </section>
 
-<section id="current-chapter-comments">
+<section id="current-chapter-comments" class="main-section">
     <h2>Commentaires</h2>
 
     <div class="comments-part">

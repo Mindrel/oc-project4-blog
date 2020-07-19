@@ -55,10 +55,10 @@
     </div>
 
     <div class="container">
-        <header>
+        <header class="main-header">
             <div id="logo">
                 <a href="index.php"><img src="public/images/logo.png" alt="Logo blog Jean Forteroche" /></a>
-                <p><strong>Billet simple pour l'Alaska</strong> <span class="book-author">par Jean Forteroche</span></p>
+                <h1><strong>Billet simple pour l'Alaska</strong> <span class="book-author">par Jean Forteroche</span></h1>
             </div>
 
             <div class="social-icons">

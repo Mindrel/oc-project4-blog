@@ -7,6 +7,14 @@
     margin-bottom: 50px;
 }
 
+#current-chapter h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+}
+
 .current-chapter-img {
     height: 550px;
     margin-bottom: 50px;
@@ -15,7 +23,8 @@
 .current-chapter-datetime {
     font-family: "Roboto Slab", serif;
     text-transform: uppercase;
-    margin-bottom: 35px;
+    text-align: left;
+    margin-bottom: 20px;
     letter-spacing: 0.1rem;
 }
 
@@ -145,6 +154,12 @@ input[type="checkbox"]:checked::before {
 ***/
 
 @media screen and (max-width: 1199px) { /* Tablettes */
+   
+    #current-chapter h2 {
+        font-size: 2.7rem;
+        margin-bottom: 30px;
+    }
+   
     #current-chapter-comments .comments-part {
         flex-direction: column;
     }
@@ -164,6 +179,12 @@ input[type="checkbox"]:checked::before {
 }
 
 @media screen and (max-width: 767px) { /* Smartphones */
+    
+    #current-chapter h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    
     .current-chapter-img {
         max-height: 230px;
         margin-bottom: 35px;

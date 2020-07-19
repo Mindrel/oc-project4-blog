@@ -4,31 +4,40 @@
 
 <?php ob_start(); ?>
 
-<section id="last-chapter">
-    <!-- Dernier chapitre posté -->
+<section id="last-chapter" class="main-section">
+    <h2>Dernier chapitre</h2>
+
+    <div class="last-chapter-item">
         <!-- Extrait du dernier chapitre -->
-        <div class="last-chapter-text">
-            <h1>
-                Chap. <?= $lastChapter["id"] ?> - <?= htmlspecialchars($lastChapter["title"]); ?>
-            </h1>
+        <article class="last-chapter-text">
+            <header>
+                <h3>
+                    Chap. <?= $lastChapter["id"] ?> - <?= htmlspecialchars($lastChapter["title"]); ?>
+                </h3>
+            </header>
 
-            <p class="last-chapter-datetime">Dernier chapitre publié le <time datetime="<?= $lastChapter["time_tag"] ?>" class="last-chapter-datetime"><?= $lastChapter["creation_date_fr"] ?></time></p>
+            <section>
+                <p class="last-chapter-datetime">Publié le <time datetime="<?= $lastChapter["time_tag"] ?>" class="last-chapter-datetime"><?= $lastChapter["creation_date_fr"] ?></time></p>
 
-            <p class="last-chapter-extract">
-                <?= $lastChapter["content_extract"]; ?>
-            </p>
+                <p class="last-chapter-extract">
+                    <?= $lastChapter["content_extract"]; ?>
+                </p>
+            </section>
 
-            <!-- Lien d'accès au chapitre -->
-            <a href="index.php?action=chapter&id=<?= $lastChapter["id"] ?>" class="button-link">Lire la suite</a>
-        </div>
+            <footer>
+                <!-- Lien d'accès au chapitre -->
+                <a href="index.php?action=chapter&id=<?= $lastChapter["id"] ?>" class="button-link">Lire la suite</a>
+            </footer>
+        </article>
 
         <!-- illustration du dernier chapitre -->
         <div class="last-chapter-img">
             <img src="<?= $lastChapter["image_path"] ?>" alt="illustration" />
         </div>
+    </div>
 </section>
 
-<section id="previous-chapters-list">
+<section id="previous-chapters-list" class="main-section">
     <h2>
         Précédents chapitres
     </h2>
@@ -53,7 +62,7 @@
     </ul>
 </section>
 
-<section id="about">
+<section id="about" class="main-section">
     <h2>À propos de l'auteur</h2>
     <p>
         Jean Forteroche, né le 8 février 1948 à Nantes, est un écrivain français, dont une grande partie de l'oeuvre est consacrée à des romans d'aventures et d'anticipation.<br />

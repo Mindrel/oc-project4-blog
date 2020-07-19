@@ -1,48 +1,52 @@
-/* Header */
+/* .main-header */
 
-header,
-header #logo,
-header .social-icons ul {
+.main-header,
+.main-header #logo,
+.main-header .social-icons ul {
     display: flex;
     align-items: flex-end;
 }
 
-header {
+.main-header {
     height: 155px;
     border-bottom: 5px solid #f56a6a;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     justify-content: space-between;
 }
 
-header p, header .social-icons {
+.main-header .social-icons {
     padding-bottom: 20px;
 }
 
-header #logo p, header #logo strong {
-    font-size: 1.1rem;
+.main-header #logo strong {
     font-family: "Roboto Slab", serif;
 }
 
-header a, header #logo img {
+.main-header .book-author {
+    font-family: "Roboto Slab", serif;
+    font-weight: normal;
+}
+
+.main-header a, .main-header #logo img {
     display: block;
     border: none;
 }
 
-header #logo img {
+.main-header #logo img {
     -webkit-filter: opacity(73%);
             filter: opacity(73%);
 }
 
-header #logo a {
+.main-header #logo a {
     padding: 0 10px 5px 0;
 }
 
-header .social-icons ul {
+.main-header .social-icons ul {
     justify-content: space-between;
     width: 200px;
 }
 
-header .social-icons i {
+.main-header .social-icons i {
     font-size: 1.5rem;
 }
 
@@ -52,69 +56,69 @@ header .social-icons i {
 
 @media screen and (max-width: 1439px) { /* HIDPI */
 
-    header {
+    .main-header {
         height: 125px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 
-    header .social-icons ul {
+    .main-header .social-icons ul {
         width: 140px;
     }
 
-    header .social-icons i {
+    .main-header .social-icons i {
         font-size: 1.4rem;
     }
 
-    header #logo img {
+    .main-header #logo img {
         width: 140px;
     }
 }
 
 @media screen and (max-width: 1199px) { /* Tablettes */
-    header #logo p, header #logo strong {
+    .main-header #logo p, .main-header #logo strong {
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 767px) { /* Smartphones */
 
-    header {
+    .main-header {
         flex-direction: column-reverse;
         align-items: space-between;
         justify-content: space-around;
         margin-bottom: 35px;
     }
 
-    header #logo p, header #logo strong {
+    .main-header #logo p, .main-header #logo strong {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
-    header .social-icons ul {
+    .main-header .social-icons ul {
         width: 130px;
     }
 
-    header #logo img {
+    .main-header #logo img {
         display: none;
     }
 
-    header p, header .social-icons {
+    .main-header p, .main-header .social-icons {
         padding-bottom: 0;
     }    
 
-    header #logo {
+    .main-header #logo {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 575px) {  /* Extra small */
 
-    header #logo strong {
+    .main-header #logo strong {
         font-size: 0.95rem;
     }
 
-    header .book-author {
+    .main-header .book-author {
         font-size: 0.65rem;
     }
 }
