@@ -77,6 +77,7 @@
 .sidebar-footer p {
     font-size: 0.8rem;
     color: #9fa3a6;
+    text-align: left;
 }
 
 .sidebar-footer a {
@@ -118,5 +119,9 @@
 
     #sidebar .toggle-btn {
         left: 300px;
+    }
+
+    .sidebar-menu, .sidebar-footer {
+        margin: 20px;
     }
 }
