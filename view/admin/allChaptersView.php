@@ -33,7 +33,7 @@
                 <?= htmlspecialchars($data["title"]) ?>
             </td>
             <td class="chapter-extract-cell">
-                <?= $data["content_extract"] ?>
+                <?= htmlspecialchars($data["content_extract"]) ?>
             </td>
             <td class="chapter-access-cell">
             <a href="../../index.php?action=chapter&id=<?= $data["id"] ?>" target="blank"><i class="fas fa-book-open"></i></a>
